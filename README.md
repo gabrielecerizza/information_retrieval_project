@@ -7,7 +7,7 @@ Install with:
 	
 	
 ## Task 1: Semantic Shifts
-Download *fastText* [wiki-news-300d-1M.vec](https://fasttext.cc/docs/en/english-vectors.html) and [cc.en.300.bin](https://fasttext.cc/docs/en/crawl-vectors.html). Also download [HistoFast300D.zip](https://github.com/dhfbk/Histo) from the *Histo* repository. 
+Download *fastText* [wiki-news-300d-1M.vec](https://fasttext.cc/docs/en/english-vectors.html) and [HistoFast300D.zip](https://github.com/dhfbk/Histo) from the *Histo* repository. 
 
 Convert the *Histo* embeddings in binary format. The ``save_word2vec_format`` function in ``irproject/semantic_shifts.py`` can be used for this purpose.
 
@@ -25,7 +25,6 @@ The directory tree for this task should look like the following:
                 corpus_new.txt
                 corpus_old.txt
                 targets.txt
-            cc.en.300.bin
             histo-fast-300d.bin
             wiki-news-300d-1M.vec
         pretrained/
