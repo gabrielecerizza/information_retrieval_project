@@ -140,7 +140,6 @@ cython_debug/
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
-*.log
 *.lot
 *.fls
 *.out
@@ -433,3 +432,5 @@ TSWLatexianTemp*
 /data/
 /pretrained/
 /.idea/
+/tb_logs/
+/lightning_logs/

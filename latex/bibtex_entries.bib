@@ -241,3 +241,388 @@ pages="160--172",
 abstract="We propose a theoretically and practically improved density-based, hierarchical clustering method, providing a clustering hierarchy from which a simplified tree of significant clusters can be constructed. For obtaining a ``flat'' partition consisting of only the most significant clusters (possibly corresponding to different density thresholds), we propose a novel cluster stability measure, formalize the problem of maximizing the overall stability of selected clusters, and formulate an algorithm that computes an optimal solution to this problem. We demonstrate that our approach outperforms the current, state-of-the-art, density-based clustering methods on a wide variety of real world data.",
 isbn="978-3-642-37456-2"
 }
+
+@phdthesis{shaw-2010-phdthesis,
+author = {Shaw, Ryan},
+year = {2010},
+month = {01},
+pages = {},
+school = {University of California, Berkeley},
+title = {Events and Periods as Concepts for Organizing Historical Knowledge}
+}
+
+@inproceedings{lai-etal-2021-event,
+    title = "Event Extraction from Historical Texts: A New Dataset for Black Rebellions",
+    author = "Lai, Viet  and
+      Nguyen, Minh Van  and
+      Kaufman, Heidi  and
+      Nguyen, Thien Huu",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.findings-acl.211",
+    doi = "10.18653/v1/2021.findings-acl.211",
+    pages = "2390--2400",
+}
+
+@inproceedings{ebner-etal-2020-rams,
+    title = "Multi-Sentence Argument Linking",
+    author = "Ebner, Seth  and
+      Xia, Patrick  and
+      Culkin, Ryan  and
+      Rawlins, Kyle  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.718",
+    doi = "10.18653/v1/2020.acl-main.718",
+    pages = "8057--8077",
+    abstract = "We present a novel document-level model for finding argument spans that fill an event{'}s roles, connecting related ideas in sentence-level semantic role labeling and coreference resolution. Because existing datasets for cross-sentence linking are small, development of our neural model is supported through the creation of a new resource, Roles Across Multiple Sentences (RAMS), which contains 9,124 annotated events across 139 types. We demonstrate strong performance of our model on RAMS and other event-related datasets.",
+}
+
+@inproceedings{chen-etal-2020-manual,
+    title = "Reading the Manual: Event Extraction as Definition Comprehension",
+    author = "Chen, Yunmo  and
+      Chen, Tongfei  and
+      Ebner, Seth  and
+      White, Aaron Steven  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the Fourth Workshop on Structured Prediction for NLP",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.spnlp-1.9",
+    doi = "10.18653/v1/2020.spnlp-1.9",
+    pages = "74--83",
+    abstract = "We ask whether text understanding has progressed to where we may extract event information through incremental refinement of bleached statements derived from annotation manuals. Such a capability would allow for the trivial construction and extension of an extraction framework by intended end-users through declarations such as, {``}Some person was born in some location at some time.{''} We introduce an example of a model that employs such statements, with experiments illustrating we can extract events under closed ontologies and generalize to unseen event types simply by reading new definitions.",
+}
+
+@inproceedings{zhong-chen-2021-frustratingly,
+    title = "A Frustratingly Easy Approach for Entity and Relation Extraction",
+    author = "Zhong, Zexuan  and
+      Chen, Danqi",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.5",
+    doi = "10.18653/v1/2021.naacl-main.5",
+    pages = "50--61",
+    abstract = "End-to-end relation extraction aims to identify named entities and extract relations between them. Most recent work models these two subtasks jointly, either by casting them in one structured prediction framework, or performing multi-task learning through shared representations. In this work, we present a simple pipelined approach for entity and relation extraction, and establish the new state-of-the-art on standard benchmarks (ACE04, ACE05 and SciERC), obtaining a 1.7{\%}-2.8{\%} absolute improvement in relation F1 over previous joint models with the same pre-trained encoders. Our approach essentially builds on two independent encoders and merely uses the entity model to construct the input for the relation model. Through a series of careful examinations, we validate the importance of learning distinct contextual representations for entities and relations, fusing entity information early in the relation model, and incorporating global context. Finally, we also present an efficient approximation to our approach which requires only one pass of both entity and relation encoders at inference time, achieving an 8-16{\mbox{$\times$}} speedup with a slight reduction in accuracy.",
+}
+
+@inproceedings{lin-etal-2020-oneie,
+    title = "A Joint Neural Model for Information Extraction with Global Features",
+    author = "Lin, Ying  and
+      Ji, Heng  and
+      Huang, Fei  and
+      Wu, Lingfei",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.713",
+    doi = "10.18653/v1/2020.acl-main.713",
+    pages = "7999--8009",
+    abstract = "Most existing joint neural models for Information Extraction (IE) use local task-specific classifiers to predict labels for individual instances (e.g., trigger, relation) regardless of their interactions. For example, a victim of a die event is likely to be a victim of an attack event in the same sentence. In order to capture such cross-subtask and cross-instance inter-dependencies, we propose a joint neural framework, OneIE, that aims to extract the globally optimal IE result as a graph from an input sentence. OneIE performs end-to-end IE in four stages: (1) Encoding a given sentence as contextualized word representations; (2) Identifying entity mentions and event triggers as nodes; (3) Computing label scores for all nodes and their pairwise links using local classifiers; (4) Searching for the globally optimal graph with a beam decoder. At the decoding stage, we incorporate global features to capture the cross-subtask and cross-instance interactions. Experiments show that adding global features improves the performance of our model and achieves new state of-the-art on all subtasks. In addition, as OneIE does not use any language-specific feature, we prove it can be easily applied to new languages or trained in a multilingual manner.",
+}
+
+@inproceedings{nguyen-nguyen-2019-one-for-all,
+	title="One for All: Neural Joint Modeling of Entities and Events",
+	author="Trung Minh {Nguyen} and Thien Huu {Nguyen}",
+	booktitle="Proceedings of the AAAI Conference on Artificial Intelligence",
+	volume="33",
+	pages="6851--6858",
+	notes="Sourced from Microsoft Academic - https://academic.microsoft.com/paper/2902619431",
+	year="2019"
+}
+
+@inproceedings{wadden-etal-2019-entity,
+    title = "Entity, Relation, and Event Extraction with Contextualized Span Representations",
+    author = "Wadden, David  and
+      Wennberg, Ulme  and
+      Luan, Yi  and
+      Hajishirzi, Hannaneh",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+    month = nov,
+    year = "2019",
+    address = "Hong Kong, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D19-1585",
+    doi = "10.18653/v1/D19-1585",
+    pages = "5784--5789",
+    abstract = "We examine the capabilities of a unified, multi-task framework for three information extraction tasks: named entity recognition, relation extraction, and event extraction. Our framework (called DyGIE++) accomplishes all tasks by enumerating, refining, and scoring text spans designed to capture local (within-sentence) and global (cross-sentence) context. Our framework achieves state-of-the-art results across all tasks, on four datasets from a variety of domains. We perform experiments comparing different techniques to construct span representations. Contextualized embeddings like BERT perform well at capturing relationships among entities in the same or adjacent sentences, while dynamic span graph updates model long-range cross-sentence relationships. For instance, propagating span representations via predicted coreference links can enable the model to disambiguate challenging entity mentions. Our code is publicly available at https://github.com/dwadden/dygiepp and can be easily adapted for new tasks or datasets.",
+}
+
+@inproceedings{luan-etal-2019-general,
+    title = "A general framework for information extraction using dynamic span graphs",
+    author = "Luan, Yi  and
+      Wadden, Dave  and
+      He, Luheng  and
+      Shah, Amy  and
+      Ostendorf, Mari  and
+      Hajishirzi, Hannaneh",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1308",
+    doi = "10.18653/v1/N19-1308",
+    pages = "3036--3046",
+    abstract = "We introduce a general framework for several information extraction tasks that share span representations using dynamically constructed span graphs. The graphs are dynamically constructed by selecting the most confident entity spans and linking these nodes with confidence-weighted relation types and coreferences. The dynamic span graph allow coreference and relation type confidences to propagate through the graph to iteratively refine the span representations. This is unlike previous multi-task frameworks for information extraction in which the only interaction between tasks is in the shared first-layer LSTM. Our framework significantly outperforms state-of-the-art on multiple information extraction tasks across multiple datasets reflecting different domains. We further observe that the span enumeration approach is good at detecting nested span entities, with significant F1 score improvement on the ACE dataset.",
+}
+
+@inproceedings{li-etal-2021-genarg,
+    title = "Document-Level Event Argument Extraction by Conditional Generation",
+    author = "Li, Sha  and
+      Ji, Heng  and
+      Han, Jiawei",
+    booktitle = "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    month = jun,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.naacl-main.69",
+    doi = "10.18653/v1/2021.naacl-main.69",
+    pages = "894--908",
+    abstract = "Event extraction has long been treated as a sentence-level task in the IE community. We argue that this setting does not match human informative seeking behavior and leads to incomplete and uninformative extraction results. We propose a document-level neural event argument extraction model by formulating the task as conditional generation following event templates. We also compile a new document-level event extraction benchmark dataset WikiEvents which includes complete event and coreference annotation. On the task of argument extraction, we achieve an absolute gain of 7.6{\%} F1 and 5.7{\%} F1 over the next best model on the RAMS and WikiEvents dataset respectively. On the more challenging task of informative argument extraction, which requires implicit coreference reasoning, we achieve a 9.3{\%} F1 gain over the best baseline. To demonstrate the portability of our model, we also create the first end-to-end zero-shot event extraction framework and achieve 97{\%} of fully supervised model{'}s trigger extraction performance and 82{\%} of the argument extraction performance given only access to 10 out of the 33 types on ACE.",
+}
+
+@article{nguyen-2021-gcn,
+  author    = {Minh Van Nguyen and
+               Viet Dac Lai and
+               Thien Huu Nguyen},
+  title     = {Cross-Task Instance Representation Interactions and Label Dependencies
+               for Joint Information Extraction with Graph Convolutional Networks},
+  journal   = {CoRR},
+  volume    = {abs/2103.09330},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2103.09330},
+  archivePrefix = {arXiv},
+  eprint    = {2103.09330},
+  timestamp = {Tue, 23 Mar 2021 16:29:47 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2103-09330.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{du-cardie-2020-event,
+    title = "Event Extraction by Answering (Almost) Natural Questions",
+    author = "Du, Xinya  and
+      Cardie, Claire",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.49",
+    doi = "10.18653/v1/2020.emnlp-main.49",
+    pages = "671--683",
+    abstract = "The problem of event extraction requires detecting the event trigger and extracting its corresponding arguments. Existing work in event argument extraction typically relies heavily on entity recognition as a preprocessing/concurrent step, causing the well-known problem of error propagation. To avoid this issue, we introduce a new paradigm for event extraction by formulating it as a question answering (QA) task that extracts the event arguments in an end-to-end manner. Empirical results demonstrate that our framework outperforms prior methods substantially; in addition, it is capable of extracting event arguments for roles not seen at training time (i.e., in a zero-shot learning setting).",
+}
+
+@article{feng-etal-2020-probing,
+  author    = {Rui Feng and
+               Jie Yuan and
+               Chao Zhang},
+  title     = {Probing and Fine-tuning Reading Comprehension Models for Few-shot
+               Event Extraction},
+  journal   = {CoRR},
+  volume    = {abs/2010.11325},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2010.11325},
+  archivePrefix = {arXiv},
+  eprint    = {2010.11325},
+  timestamp = {Mon, 26 Oct 2020 15:39:44 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2010-11325.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{lu-etal-2021-text2event,
+  author    = {Yaojie Lu and
+               Hongyu Lin and
+               Jin Xu and
+               Xianpei Han and
+               Jialong Tang and
+               Annan Li and
+               Le Sun and
+               Meng Liao and
+               Shaoyi Chen},
+  title     = {Text2Event: Controllable Sequence-to-Structure Generation for End-to-end
+               Event Extraction},
+  journal   = {CoRR},
+  volume    = {abs/2106.09232},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2106.09232},
+  archivePrefix = {arXiv},
+  eprint    = {2106.09232},
+  timestamp = {Tue, 29 Jun 2021 16:55:04 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2106-09232.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{liu-etal-2020-mrc,
+    title = "Event Extraction as Machine Reading Comprehension",
+    author = "Liu, Jian  and
+      Chen, Yubo  and
+      Liu, Kang  and
+      Bi, Wei  and
+      Liu, Xiaojiang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.128",
+    doi = "10.18653/v1/2020.emnlp-main.128",
+    pages = "1641--1651",
+    abstract = "Event extraction (EE) is a crucial information extraction task that aims to extract event information in texts. Previous methods for EE typically model it as a classification task, which are usually prone to the data scarcity problem. In this paper, we propose a new learning paradigm of EE, by explicitly casting it as a machine reading comprehension problem (MRC). Our approach includes an unsupervised question generation process, which can transfer event schema into a set of natural questions, followed by a BERT-based question-answering process to retrieve answers as EE results. This learning paradigm enables us to strengthen the reasoning process of EE, by introducing sophisticated models in MRC, and relieve the data scarcity problem, by introducing the large-scale datasets in MRC. The empirical results show that: i) our approach attains state-of-the-art performance by considerable margins over previous methods. ii) Our model is excelled in the data-scarce scenario, for example, obtaining 49.8{\%} in F1 for event argument extraction with only 1{\%} data, compared with 2.2{\%} of the previous method. iii) Our model also fits with zero-shot scenarios, achieving 37.0{\%} and 16{\%} in F1 on two datasets without using any EE training data.",
+}
+
+@article{kendall-etal-2017-mtl-loss,
+  author    = {Alex Kendall and
+               Yarin Gal and
+               Roberto Cipolla},
+  title     = {Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry
+               and Semantics},
+  journal   = {CoRR},
+  volume    = {abs/1705.07115},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.07115},
+  archivePrefix = {arXiv},
+  eprint    = {1705.07115},
+  timestamp = {Mon, 13 Aug 2018 16:48:31 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/KendallGC17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{lewis-etal-2020-bart,
+    title = "{BART}: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+    author = "Lewis, Mike  and
+      Liu, Yinhan  and
+      Goyal, Naman  and
+      Ghazvininejad, Marjan  and
+      Mohamed, Abdelrahman  and
+      Levy, Omer  and
+      Stoyanov, Veselin  and
+      Zettlemoyer, Luke",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.703",
+    doi = "10.18653/v1/2020.acl-main.703",
+    pages = "7871--7880",
+    abstract = "We present BART, a denoising autoencoder for pretraining sequence-to-sequence models. BART is trained by (1) corrupting text with an arbitrary noising function, and (2) learning a model to reconstruct the original text. It uses a standard Tranformer-based neural machine translation architecture which, despite its simplicity, can be seen as generalizing BERT (due to the bidirectional encoder), GPT (with the left-to-right decoder), and other recent pretraining schemes. We evaluate a number of noising approaches, finding the best performance by both randomly shuffling the order of sentences and using a novel in-filling scheme, where spans of text are replaced with a single mask token. BART is particularly effective when fine tuned for text generation but also works well for comprehension tasks. It matches the performance of RoBERTa on GLUE and SQuAD, and achieves new state-of-the-art results on a range of abstractive dialogue, question answering, and summarization tasks, with gains of up to 3.5 ROUGE. BART also provides a 1.1 BLEU increase over a back-translation system for machine translation, with only target language pretraining. We also replicate other pretraining schemes within the BART framework, to understand their effect on end-task performance.",
+}
+
+@inproceedings{cybulska-vossen-2011-historical,
+    title = "Historical Event Extraction from Text",
+    author = "Cybulska, Agata Katarzyna  and
+      Vossen, Piek",
+    booktitle = "Proceedings of the 5th {ACL}-{HLT} Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities",
+    month = jun,
+    year = "2011",
+    address = "Portland, OR, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W11-1506",
+    pages = "39--43",
+}
+
+@INPROCEEDINGS{ahonen-hyvonen-2009-historical,
+  author={Ahonen, Eeva and Hyvonen, Eero},
+  booktitle={2009 IEEE International Conference on Semantic Computing}, 
+  title={Publishing Historical Texts on the Semantic Web - A Case Study}, 
+  year={2009},
+  volume={},
+  number={},
+  pages={167-173},
+  doi={10.1109/ICSC.2009.9}}
+
+  @inproceedings{zhang-etal-2020-two,
+    title = "A Two-Step Approach for Implicit Event Argument Detection",
+    author = "Zhang, Zhisong  and
+      Kong, Xiang  and
+      Liu, Zhengzhong  and
+      Ma, Xuezhe  and
+      Hovy, Eduard",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.667",
+    doi = "10.18653/v1/2020.acl-main.667",
+    pages = "7479--7485",
+    abstract = "In this work, we explore the implicit event argument detection task, which studies event arguments beyond sentence boundaries. The addition of cross-sentence argument candidates imposes great challenges for modeling. To reduce the number of candidates, we adopt a two-step approach, decomposing the problem into two sub-problems: argument head-word detection and head-to-span expansion. Evaluated on the recent RAMS dataset (Ebner et al., 2020), our model achieves overall better performance than a strong sequence labeling baseline. We further provide detailed error analysis, presenting where the model mainly makes errors and indicating directions for future improvements. It remains a challenge to detect implicit arguments, calling for more future work of document-level modeling for this task.",
+}
+
+@inproceedings{wen-etal-2021-resin,
+	title="RESIN: A Dockerized Schema-Guided Cross-document Cross-lingual Cross-media Information Extraction and Event Tracking System",
+	author="Haoyang {Wen} and Ying {Lin} and Tuan {Lai} and Xiaoman {Pan} and Sha {Li} and Xudong {Lin} and Ben {Zhou} and Manling {Li} and Haoyu {Wang} and Hongming {Zhang} and Xiaodong {Yu} and Alexander {Dong} and Zhenhailong {Wang} and Yi {Fung} and Piyush {Mishra} and Qing {Lyu} and Dídac {Surís} and Brian {Chen} and Susan Windisch {Brown} and Martha {Palmer} and Chris {Callison-Burch} and Carl {Vondrick} and Jiawei {Han} and Dan {Roth} and Shih-Fu {Chang} and Heng {Ji}",
+	booktitle="Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Demonstrations",
+	pages="133--143",
+	notes="Sourced from Microsoft Academic - https://academic.microsoft.com/paper/3171908007",
+	year="2021"
+}
+
+@inproceedings{chen-etal-2020-joint-modeling,
+    title = "Joint Modeling of Arguments for Event Understanding",
+    author = "Chen, Yunmo  and
+      Chen, Tongfei  and
+      Van Durme, Benjamin",
+    booktitle = "Proceedings of the First Workshop on Computational Approaches to Discourse",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.codi-1.10",
+    doi = "10.18653/v1/2020.codi-1.10",
+    pages = "96--101",
+    abstract = "We recognize the task of event argument linking in documents as similar to that of intent slot resolution in dialogue, providing a Transformer-based model that extends from a recently proposed solution to resolve references to slots. The approach allows for joint consideration of argument candidates given a detected event, which we illustrate leads to state-of-the-art performance in multi-sentence argument linking.",
+}
+
+@inproceedings{wei-etal-2021-trigger,
+	title="Trigger is Not Sufficient: Exploiting Frame-aware Knowledge for Implicit Event Argument Extraction",
+	author="Kaiwen {Wei} and Xian {Sun} and Zequn {Zhang} and Jingyuan {Zhang} and Guo {Zhi} and Li {Jin}",
+	booktitle="ACL 2021: 59th annual meeting of the Association for Computational Linguistics",
+	pages="4672--4682",
+	notes="Sourced from Microsoft Academic - https://academic.microsoft.com/paper/3176453404",
+	year="2021"
+}
+
+@inproceedings{pouran-ben-veyseh-etal-2021-unleash,
+    title = "Unleash {GPT}-2 Power for Event Detection",
+    author = "Pouran Ben Veyseh, Amir  and
+      Lai, Viet  and
+      Dernoncourt, Franck  and
+      Nguyen, Thien Huu",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-long.490",
+    doi = "10.18653/v1/2021.acl-long.490",
+    pages = "6271--6282",
+    abstract = "Event Detection (ED) aims to recognize mentions of events (i.e., event triggers) and their types in text. Recently, several ED datasets in various domains have been proposed. However, the major limitation of these resources is the lack of enough training data for individual event types which hinders the efficient training of data-hungry deep learning models. To overcome this issue, we propose to exploit the powerful pre-trained language model GPT-2 to generate training samples for ED. To prevent the noises inevitable in automatically generated data from hampering training process, we propose to exploit a teacher-student architecture in which the teacher is supposed to learn anchor knowledge from the original data. The student is then trained on combination of the original and GPT-generated data while being led by the anchor knowledge from the teacher. Optimal transport is introduced to facilitate the anchor knowledge-based guidance between the two networks. We evaluate the proposed model on multiple ED benchmark datasets, gaining consistent improvement and establishing state-of-the-art results for ED.",
+}
+
+@inproceedings{lai-2021-graph,
+	title="Graph Learning Regularization and Transfer Learning for Few-Shot Event Detection",
+	author="Viet Dac {Lai} and Minh Van {Nguyen} and Thien Huu {Nguyen} and Franck {Dernoncourt}",
+	booktitle="Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+	pages="2172--2176",
+	notes="Sourced from Microsoft Academic - https://academic.microsoft.com/paper/3153870750",
+	year="2021"
+}
+
