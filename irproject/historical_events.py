@@ -9,7 +9,12 @@ import traceback
 import transformers
 from cache_decorator import Cache
 from collections import defaultdict
+from sklearn.metrics import (
+    accuracy_score, f1_score,
+    precision_score, recall_score
+)
 from tqdm.notebook import tqdm
+from torchmetrics import Accuracy, F1, Precision, Recall
 from transformers import (
     BartTokenizer, BertTokenizer
 )
@@ -261,7 +266,7 @@ def tensor_binary_accuracy(y_true, y_preds_probas):
 def get_spans(
     tokens: List[str], 
     last_token_idx: int,
-    span_max_length: int = 8
+    span_max_length: int = 3
 ):
     # We use last_token_idx in case the original sentence
     # was truncated by the BERT tokenizer. In this case we
@@ -480,10 +485,15 @@ def get_rams_data_dict(
     args_dec_ids = []
     args_dec_masks = []
 
+    evt_ids = []
+    evt_masks = []
+    evt_dec_ids = []
+    evt_dec_masks = []
+
     argument_tokenizer = BartTokenizer.from_pretrained(
         "facebook/bart-base"
     )
-    argument_tokenizer.add_tokens([" <arg>", " <trg>"])
+    argument_tokenizer.add_tokens([" <arg>", " <trg>", " <evt>"])
 
     for doc in tqdm(
         docs,
@@ -515,7 +525,7 @@ def get_rams_data_dict(
         tokens.append(doc_tokens)
 
         # ========================
-        # EVENT/TRIGGET EXTRACTION
+        # EVENT/TRIGGER EXTRACTION
         # ========================
 
         tokenizer_output = tokenizer(
@@ -556,7 +566,7 @@ def get_rams_data_dict(
         span_mappers.append(doc_spans)
 
         doc_spans = [
-            [token2idx[span[0]][0], token2idx[span[1]][1]]
+            [token2idx[span[0]][0], token2idx[span[1]][1], span[2]]
             for span in doc_spans
         ]
         spans.append(doc_spans)
@@ -702,6 +712,60 @@ def get_rams_data_dict(
         args_dec_ids.append(arg_out["input_ids"])
         args_dec_masks.append(arg_out["attention_mask"])
 
+        #=================
+        # EVENT GENERATION
+        #=================
+
+        evt_template_in = "This document is about <evt>"
+    
+        evt2sent, sent2evt, _ = get_event_names_dict()
+
+        doc_trigger = doc["evt_triggers"]
+        trigger_name = doc_trigger[0][2][0][0].replace("n/a", "unspecified")
+
+        evt_sent = evt2sent[trigger_name]
+        evt_sent = "This document is about " + evt_sent
+
+        template_tokens = []
+        for word in evt_sent.split(" "):
+            template_tokens.extend(
+                argument_tokenizer.tokenize(
+                    word,
+                    add_prefix_space=True 
+                )
+            )
+
+        evt_template_out = template_tokens
+
+        evt_context = argument_tokenizer.tokenize(
+            " ".join(doc_tokens),
+            add_prefix_space=True
+        )
+
+        evt_in = argument_tokenizer.encode_plus(
+            evt_template_in, 
+            evt_context, 
+            add_special_tokens=True,
+            add_prefix_space=True,
+            max_length=424,
+            truncation="only_second",
+            padding="max_length"
+        )
+
+        evt_out = argument_tokenizer.encode_plus(
+            evt_template_out, 
+            add_special_tokens=True,
+            add_prefix_space=True, 
+            max_length=72,
+            truncation=True,
+            padding="max_length"
+        )
+
+        evt_ids.append(evt_in["input_ids"])
+        evt_masks.append(evt_in["attention_mask"])
+        evt_dec_ids.append(evt_out["input_ids"])
+        evt_dec_masks.append(evt_out["attention_mask"])
+
     result = {
         "spans": spans,
         "spans_trg_labels": spans_trg_labels, 
@@ -717,7 +781,11 @@ def get_rams_data_dict(
         "args_dec_ids": args_dec_ids,
         "args_dec_masks": args_dec_masks,
         "doc_keys": doc_keys,
-        "span_mappers": span_mappers
+        "span_mappers": span_mappers,
+        "evt_ids": evt_ids,
+        "evt_masks": evt_masks,
+        "evt_dec_ids": evt_dec_ids,
+        "evt_dec_masks": evt_dec_masks
     }
 
     if write:
@@ -827,7 +895,7 @@ def sanity_check_preprocessed_data(
         spans = item["spans"][0]
         input_ids = item["input_ids"][0]
         idx = torch.argmax(spans_trg_true)
-        span_start, span_end = spans[idx]
+        span_start, span_end, span_width = spans[idx]
 
         evt_text_preproc = bert_tokenizer.decode(
             input_ids[span_start:span_end +1]
@@ -961,6 +1029,64 @@ def get_bart_sentences_train(
     return enc_ids, enc_attn_masks, enc_sentences
 
 
+def get_bart_sentences_no_span_train(
+    input_ids, 
+    evt_names,
+    doc_tokens,
+    bart_tokenizer,
+    ontology_base_path: str = "datasets"
+):
+    enc_ids = []
+    enc_attn_masks = []
+    enc_sentences = []
+
+    for idx, (batch_ids, evt_name) in enumerate(
+        zip(input_ids, evt_names)
+    ):
+        tokens = doc_tokens[idx]
+
+        ontology_dict = load_ontology(ontology_base_path)
+        template = ontology_dict[
+            evt_name.replace("n/a", "unspecified")
+        ]["template"]
+
+        template_in = template2tokens(
+            template, bart_tokenizer
+        )
+
+        context = bart_tokenizer.tokenize(
+            " ".join(tokens),
+            add_prefix_space=True
+        )
+
+        arg_in = bart_tokenizer.encode_plus(
+            template_in, 
+            context, 
+            add_special_tokens=True,
+            add_prefix_space=True,
+            max_length=424,
+            truncation="only_second",
+            padding="max_length"
+        )
+
+        enc_id = arg_in["input_ids"]
+        enc_sentence = bart_tokenizer.decode(
+            enc_id
+        )
+
+        enc_ids.append(
+            enc_id
+        )
+        enc_attn_masks.append(
+            arg_in["attention_mask"]
+        )
+        enc_sentences.append(
+            enc_sentence
+        )
+
+    return enc_ids, enc_attn_masks, enc_sentences
+
+
 def get_bart_sentences_not_train(
     input_ids, span_batch, 
     spans_with_evts, evt_names,
@@ -983,7 +1109,7 @@ def get_bart_sentences_not_train(
         )
 
         evt_span = span_list[evt_span_idx]
-        span_start, span_end = evt_span
+        span_start, span_end, _ = evt_span
 
         prefix_text = bert_tokenizer.decode(
             batch_ids[:span_start]
@@ -1013,6 +1139,67 @@ def get_bart_sentences_not_train(
         )
 
         context = prefix + [" <trg>", ] + trg + [" <trg>", ] + suffix
+
+        arg_in = bart_tokenizer.encode_plus(
+            template_in, 
+            context, 
+            add_special_tokens=True,
+            add_prefix_space=True,
+            max_length=424,
+            truncation="only_second",
+            padding="max_length"
+        )
+
+        enc_id = arg_in["input_ids"]
+        enc_sentence = bart_tokenizer.decode(
+            enc_id
+        )
+
+        enc_ids.append(
+            enc_id
+        )
+        enc_attn_masks.append(
+            arg_in["attention_mask"]
+        )
+        enc_sentences.append(
+            enc_sentence
+        )
+
+    return enc_ids, enc_attn_masks, enc_sentences
+
+
+def get_bart_sentences_no_span_not_train(
+    input_ids, 
+    evt_names,
+    bert_tokenizer, 
+    bart_tokenizer,
+    ontology_base_path: str = "datasets"
+):
+    enc_ids = []
+    enc_attn_masks = []
+    enc_sentences = []
+    ontology_dict = load_ontology(ontology_base_path)
+
+    for batch_ids, evt_name in zip(
+        input_ids, evt_names
+    ):
+        template = ontology_dict[
+            evt_name.replace("n/a", "unspecified")
+        ]["template"]
+        template_in = template2tokens(
+            template, bart_tokenizer
+        )
+
+
+        context = bert_tokenizer.decode(
+            batch_ids,
+            add_special_tokens=False
+        )
+        # context = remove_special_tokens(context).strip()
+        context = bart_tokenizer.tokenize(
+            context,
+            add_prefix_space=True
+        )
 
         arg_in = bart_tokenizer.encode_plus(
             template_in, 
@@ -1164,7 +1351,7 @@ def find_matches(pred, template, evt_type, ontology_dict):
 
     template_words = _RE_COMBINE_WHITESPACE.sub(" ", template).strip().split()
     predicted_words = _RE_COMBINE_WHITESPACE.sub(" ", pred["predicted"]).strip().split()
-    gold_words = _RE_COMBINE_WHITESPACE.sub(" ", pred["gold"]).strip().replace("\s", " ").split()  
+    gold_words = _RE_COMBINE_WHITESPACE.sub(" ", pred["gold"]).strip().split()  
     predicted_args = defaultdict(list) # each argname may have multiple participants 
     gold_args = defaultdict(list)
     t_ptr= 0
@@ -1359,5 +1546,311 @@ def evaluate_arguments_results(
         encoding="utf-8"
     ) as f:
         json.dump(results, f, indent=4)
+
+
+def find_event_matches(
+    prediction, evt2sent, sent2evt, evt2idx
+):
+    _RE_COMBINE_WHITESPACE = re.compile(r"\s+")
+
+    predicted_words = _RE_COMBINE_WHITESPACE.sub(" ", prediction["predicted"]).strip()
+    gold_words = _RE_COMBINE_WHITESPACE.sub(" ", prediction["gold"]).strip()
+
+    predicted_evt_sent = re.sub("This document is about ", "", predicted_words)
+    gold_evt_sent = re.sub("This document is about ", "", gold_words)
+
+    predicted_evt = 0
+
+    if predicted_evt_sent in sent2evt.keys():
+        predicted_evt = sent2evt[predicted_evt_sent].replace("unspecified", "n/a")
+        predicted_evt = evt2idx[predicted_evt]
+
+    gold_evt = sent2evt[gold_evt_sent].replace("unspecified", "n/a")
+    gold_evt = evt2idx[gold_evt]
+
+    return predicted_evt, gold_evt, predicted_evt_sent, gold_evt_sent
+
+
+def evaluate_event_results(
+    res_dir: str = "results/historical_events/events",
+    test_filename: str = "datasets/rams/raw/test.jsonlines",
+    average: str = "weighted"
+):
+
+    results = {
+        "precision": 0,
+        "recall": 0,
+        "f1": 0,
+        "accuracy": 0,
+        "sk_precision": 0,
+        "sk_recall": 0,
+        "sk_f1": 0,
+        "sk_accuracy": 0,
+        "details": []
+    }
+
+    evt2sent, sent2evt, _, _ = get_event_names_dict()
+    docs, dicts = load_rams_data()
+    evt2idx = dicts["evt2idx"]
+
+    # Note that using "weighted" average might result in a
+    # f1-score that is not between precision and recall:
+    # https://scikit-learn.org/stable/modules/generated/sklearn.metrics.f1_score.html
+    precision = Precision(num_classes=140, average=average)
+    recall = Recall(num_classes=140, average=average)
+    f1 = F1(num_classes=140, average=average)
+    accuracy = Accuracy(num_classes=140, average=average)
+
+    predictions = []
+    test_data = []
+
+    y_preds = []
+    y_true = []
+
+    with open(
+        f"{res_dir}/event_gen_predictions.jsonl",
+        encoding="utf-8"
+    ) as reader:
+        for line in reader:
+            obj = json.loads(line)
+            predictions.append(obj)
+
+    with open(
+        test_filename,
+        encoding="utf-8"
+    ) as reader:
+        for line in reader:
+            obj = json.loads(line)
+            test_data.append(obj)
+
+    for prediction in tqdm(
+        predictions,
+        desc="Evaluating prediction",
+        leave=False
+    ):
+
+        predicted_evt, gold_evt, predicted_evt_sent, gold_evt_sent = find_event_matches(
+            prediction, evt2sent, sent2evt, evt2idx
+        )
+
+        y_preds.append(predicted_evt)
+        y_true.append(gold_evt)
+
+        d_res = {
+            "prediction": predicted_evt_sent,
+            "gold": gold_evt_sent,
+            "predicted_evt": predicted_evt,
+            "gold_evt": gold_evt 
+        }
+
+        results["details"].append(d_res)
+
+    y_preds = torch.tensor(y_preds)
+    y_true = torch.tensor(y_true)
+
+    precision(y_preds, y_true)
+    recall(y_preds, y_true)
+    f1(y_preds, y_true)
+    accuracy(y_preds, y_true)
+
+    results["precision"] = precision.compute().item()
+    results["recall"] = recall.compute().item()
+    results["f1"] = f1.compute().item()
+    results["accuracy"] = accuracy.compute().item()
+    results["sk_precision"] = precision_score(y_true, y_preds, average="weighted")
+    results["sk_recall"] = recall_score(y_true, y_preds, average="weighted")
+    results["sk_f1"] = f1_score(y_true, y_preds, average="weighted")
+    results["sk_accuracy"] = accuracy_score(y_true, y_preds)
+
+    with open(
+        f"{res_dir}/event_gen_results.json", 
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(results, f, indent=4)
+
+
+def get_event_names_dict():
+
+    bart_tokenizer = BartTokenizer.from_pretrained(
+        "facebook/bart-base"
+    )
+    bart_tokenizer.add_tokens([" <arg>", " <trg>", " <evt>"])
+
+    evt2sent = {
+        'artifactexistence.artifactfailure.mechanicalfailure': "artifact mechanical failure",
+        'artifactexistence.damagedestroy.unspecified': "artifact damage or destruction",
+        'artifactexistence.damagedestroy.damage': "artifact damage",
+        'artifactexistence.damagedestroy.destroy': "artifact destruction",
+        'artifactexistence.shortage.shortage': "artifact shortage",
+        'conflict.attack.unspecified': "attack in a conflict",
+        'conflict.attack.airstrikemissilestrike': "air strike or missile strike in a conflict",
+        'conflict.attack.biologicalchemicalpoisonattack': "biological or chemical or poison attack in a conflict",
+        'conflict.attack.bombing': "bombing in a conflict",
+        'conflict.attack.firearmattack': "firearm attack in a conflict",
+        'conflict.attack.hanging': "hanging in a conflict",
+        'conflict.attack.invade': "invasion in a conflict",
+        'conflict.attack.selfdirectedbattle': "self directed battle in a conflict",
+        'conflict.attack.setfire': "setting fire in a conflict",
+        'conflict.attack.stabbing': "stabbing in a conflict",
+        'conflict.attack.stealrobhijack': "steal or rob or hijack in a conflict",
+        'conflict.attack.strangling': "strangling in a conflict",
+        'conflict.coup.coup': "coup in a conflict",
+        'conflict.demonstrate.unspecified': "demonstration in a conflict",
+        'conflict.demonstrate.marchprotestpoliticalgathering': "march or protest or political gathering in a conflict",
+        'conflict.yield.unspecified': "yielding in a conflict",
+        'conflict.yield.retreat': "retreat in a conflict",
+        'conflict.yield.surrender': "surrender in a conflict",
+        'contact.collaborate.unspecified': "collaboration with a contact",
+        'contact.collaborate.correspondence': "correspondence in a collaboration",
+        'contact.collaborate.meet': "meeting in a collaboration",
+        'contact.commandorder.unspecified': "command or order",
+        'contact.commandorder.broadcast': "a broadcast about a command or order",
+        'contact.commandorder.correspondence': "correspondence about a command or order",
+        'contact.commandorder.meet': "a meeting about a command or order",
+        'contact.commitmentpromiseexpressintent.unspecified': "commitment or promise or intent expression",
+        'contact.commitmentpromiseexpressintent.broadcast': "a broadcast about commitment or promise or intent expression",
+        'contact.commitmentpromiseexpressintent.correspondence': "correspondence about commitment or promise or intent expression",
+        'contact.commitmentpromiseexpressintent.meet': "meeting for commitment or promise or intent expression",
+        'contact.discussion.unspecified': "discussion with a contact",
+        'contact.discussion.correspondence': "correspondence for a discussion",
+        'contact.discussion.meet': "meeting for a discussion",
+        'contact.funeralvigil.unspecified': "a funeral or vigil",
+        'contact.funeralvigil.meet': "meeting for a funeral or vigil",
+        'contact.mediastatement.unspecified': "a media statement",
+        'contact.mediastatement.broadcast': "the broadcast of a media statement",
+        'contact.negotiate.unspecified': "a negotiation",
+        'contact.negotiate.correspondence': "correspondence for a negotiation",
+        'contact.negotiate.meet': "meeting for a negotiation",
+        'contact.prevarication.unspecified': "prevarication",
+        'contact.prevarication.broadcast': "a broadcast about a prevarication",
+        'contact.prevarication.correspondence': "correspondence about a prevarication",
+        'contact.prevarication.meet': "a meeting about a prevarication",
+        'contact.publicstatementinperson.unspecified': "a public statement in person",
+        'contact.publicstatementinperson.broadcast': "the broadcast of a public statement in person",
+        'contact.requestadvise.unspecified': "a request or advise",
+        'contact.requestadvise.broadcast': "the broadcast of a request or advise",
+        'contact.requestadvise.correspondence': "correspondence about a request or advise",
+        'contact.requestadvise.meet': "a request or advise in a meeting",
+        'contact.threatencoerce.unspecified': "a threat or coercion",
+        'contact.threatencoerce.broadcast': "the broadact of a threat or coercion",
+        'contact.threatencoerce.correspondence': "correspondence about a threat or coercion",
+        'contact.threatencoerce.meet': "threat or coercion in a meeting",
+        'disaster.accidentcrash.accidentcrash': "an accident or crash",
+        'disaster.diseaseoutbreak.diseaseoutbreak': "a disease outbreak",
+        'disaster.fireexplosion.fireexplosion': "a fire explosion",
+        'genericcrime.genericcrime.genericcrime': "a generic crime",
+        'government.agreements.unspecified': "government agreements",
+        'government.agreements.acceptagreementcontractceasefire': "the acceptance of an agreement or a cease fire",
+        'government.agreements.rejectnullifyagreementcontractceasefire': "the rejection of an agreement or cease fire",
+        'government.agreements.violateagreement': "the violation of an agreement",
+        'government.convene.convene': "a government convention",
+        'government.formation.unspecified': "a government formation",
+        'government.formation.mergegpe': "a government merge",
+        'government.formation.startgpe': "a government start",
+        'government.legislate.legislate': "legislation",
+        'government.spy.spy': "spionage",
+        'government.vote.unspecified': "a government vote",
+        'government.vote.castvote': "a government vote casted",
+        'government.vote.violationspreventvote': "a government vote violation or prevention",
+        'inspection.sensoryobserve.unspecified': "a sensory inspection",
+        'inspection.sensoryobserve.inspectpeopleorganization': "an inspection of people",
+        'inspection.sensoryobserve.monitorelection': "the monitoring of an election",
+        'inspection.sensoryobserve.physicalinvestigateinspect': "a physical investigation or inspection",
+        'inspection.targetaimat.targetaimat': "a target aim in an inspection",
+        'justice.arrestjaildetain.arrestjaildetain': "arrest or jail or detention",
+        'justice.initiatejudicialprocess.unspecified': "a judicial process",
+        'justice.initiatejudicialprocess.chargeindict': "charge indiction in a judicial process",
+        'justice.initiatejudicialprocess.trialhearing': "a trial hearing in a judicial process",
+        'justice.investigate.unspecified': "an investigation",
+        'justice.investigate.investigatecrime': "a crime investigation",
+        'justice.judicialconsequences.unspecified': "judicial consequences",
+        'justice.judicialconsequences.convict': "conviction as a judicial consequence",
+        'justice.judicialconsequences.execute': "execution as a judicial consequence",
+        'justice.judicialconsequences.extradite': "extradition as a judicial consequence",
+        'life.die.unspecified': "death",
+        'life.die.deathcausedbyviolentevents': "death caused by violent events",
+        'life.die.nonviolentdeath': "non violent death",
+        'life.injure.unspecified': "an injury",
+        'life.injure.illnessdegradationhungerthirst': "an injury caused hunger or thirst",
+        'life.injure.illnessdegradationphysical': "an injury caused by physical degradation",
+        'life.injure.illnessdegredationsickness': "an injury caused by sickness",
+        'life.injure.injurycausedbyviolentevents': "an injury caused by violent events",
+        'manufacture.artifact.unspecified': "the manufacturing of an artifact",
+        'manufacture.artifact.build': "the building of an artifact",
+        'manufacture.artifact.createintellectualproperty': "the creation of an intellectual property",
+        'manufacture.artifact.createmanufacture': "the creation of a manufacture",
+        'medical.intervention.intervention': "a medical intervention",
+        'movement.transportartifact.unspecified': "the transportation of an artifact",
+        'movement.transportartifact.bringcarryunload': "carrying or unloading an artifact",
+        'movement.transportartifact.disperseseparate': "an artifact dispersed or separated during transportation",
+        'movement.transportartifact.fall': "an artifact fallen during transportation",
+        'movement.transportartifact.grantentry': "an entry grant for the transportation of an artifact",
+        'movement.transportartifact.hide': "an artifact hidden during transportation",
+        'movement.transportartifact.lossofcontrol': "the loss of control of an artifact during transportation",
+        'movement.transportartifact.nonviolentthrowlaunch': "a non violent throw or launch of an artifact",
+        'movement.transportartifact.prevententry': "an entry prevention for the transportation of an artifact",
+        'movement.transportartifact.preventexit': "an exit prevention for the transportation of an artifact",
+        'movement.transportartifact.receiveimport': "an artifact received or imported",
+        'movement.transportartifact.sendsupplyexport': "sending supply or exporting an artifact",
+        'movement.transportartifact.smuggleextract': "smuggling or extracting an artifact",
+        'movement.transportperson.unspecified': "the transportation of a person",
+        'movement.transportperson.bringcarryunload': "carrying or unloading a person",
+        'movement.transportperson.disperseseparate': "a person dispersed or separated during transportation",
+        'movement.transportperson.evacuationrescue': "the evacuation or rescue of a person",
+        'movement.transportperson.fall': "a person fallen during transportation",
+        'movement.transportperson.grantentryasylum': "a grant of entry or asylum to a person",
+        'movement.transportperson.hide': "a person hidden during transportation",
+        'movement.transportperson.prevententry': "an entry prevention for the transportation of a person",
+        'movement.transportperson.preventexit': "an exit prevention for the transportation of a person",
+        'movement.transportperson.selfmotion': "a person in self motion",
+        'movement.transportperson.smuggleextract': "smuggling or extracting a person",
+        'personnel.elect.unspecified': "election of a person",
+        'personnel.elect.winelection': "an election won by a person",
+        'personnel.endposition.unspecified': "the end of a position",
+        'personnel.endposition.firinglayoff': "a person who was fired or laid off",
+        'personnel.endposition.quitretire': "a person who quit a position or retired",
+        'personnel.startposition.unspecified': "the start of a position",
+        'personnel.startposition.hiring': "a person being hired",
+        'transaction.transaction.unspecified': "a transaction",
+        'transaction.transaction.embargosanction': "an embargo or sanction in a transaction",
+        'transaction.transaction.giftgrantprovideaid': "a gift granted or aid provided in a transaction",
+        'transaction.transfermoney.unspecified': "a transfer of money",
+        'transaction.transfermoney.borrowlend': "money borrowed or lent",
+        'transaction.transfermoney.embargosanction': "an embargo or sanction in a transfer of money",
+        'transaction.transfermoney.giftgrantprovideaid': "a gift granted or aid provided in a transfer of money",
+        'transaction.transfermoney.payforservice': "payment for a service",
+        'transaction.transfermoney.purchase': "a purchase with a transfer of money",
+        'transaction.transferownership.unspecified': "a transfer of ownership",
+        'transaction.transferownership.borrowlend': "ownership borrowed or lent",
+        'transaction.transferownership.embargosanction': "an embargo or sanction in a transfer of ownership",
+        'transaction.transferownership.giftgrantprovideaid': "a gift granted or aid provided in a transfer of ownership",
+        'transaction.transferownership.purchase': "a purchase with a transfer of ownership",
+        'transaction.transaction.transfercontrol': "a transfer of control in a transaction"
+    }
+
+    sent2evt = {v: k for k, v in evt2sent.items()}
+    vocab = set()
+    for sent in sent2evt.keys():
+        for word in sent.split(" "):
+            vocab.add(word)
+
+    prompt = "This document is about"
+    for word in prompt.split(" "):
+        vocab.add(word)
+
+    vocab = list(vocab)
+
+    v = " ".join(vocab)
+
+    out = bart_tokenizer.encode_plus(
+        v, 
+        add_special_tokens=True,
+        add_prefix_space=True,
+        max_length=424,
+        padding="max_length"
+    )
+
+    return evt2sent, sent2evt, vocab, torch.tensor(out["input_ids"])
 
 

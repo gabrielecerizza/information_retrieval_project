@@ -1,0 +1,5238 @@
+{
+    "precision": 0.2978287637233734,
+    "recall": 0.27898961305618286,
+    "f1": 0.24808748066425323,
+    "accuracy": 0.27898961305618286,
+    "sk_precision": 0.2978287613932521,
+    "sk_recall": 0.27898966704936856,
+    "sk_f1": 0.2480874698867369,
+    "sk_accuracy": 0.27898966704936856,
+    "details": [
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "hanging in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 8,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 106,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "yielding in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 18
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 138,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "artifact damage or destruction",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 3,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 123,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "a person in self motion",
+            "predicted_evt": 89,
+            "gold_evt": 116
+        },
+        {
+            "prediction": "correspondence for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 39,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 137,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "a broadcast about a command or order",
+            "predicted_evt": 24,
+            "gold_evt": 24
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "a gift granted or aid provided in a transaction",
+            "predicted_evt": 84,
+            "gold_evt": 126
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 11,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury",
+            "predicted_evt": 90,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 123,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 78,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 72,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "yielding in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 18
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "yielding in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 18
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 139,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 122,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "air strike or missile strike in a conflict",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 4,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an artifact received or imported",
+            "predicted_evt": 106,
+            "gold_evt": 104
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 115,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury",
+            "predicted_evt": 89,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "stabbing in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 13
+        },
+        {
+            "prediction": "an embargo or sanction in a transaction",
+            "gold": "a judicial process",
+            "predicted_evt": 125,
+            "gold_evt": 76
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 14,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "attack in a conflict",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 10,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 106,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "surrender in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 20
+        },
+        {
+            "prediction": "meeting for a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 35,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "spionage",
+            "predicted_evt": 59,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "death",
+            "gold": "death caused by violent events",
+            "predicted_evt": 85,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "meeting for a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 35,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "non violent death",
+            "predicted_evt": 110,
+            "gold_evt": 86
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 13,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury",
+            "predicted_evt": 89,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "a government start",
+            "predicted_evt": 92,
+            "gold_evt": 64
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 137,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a trial hearing in a judicial process",
+            "gold": "a trial hearing in a judicial process",
+            "predicted_evt": 77,
+            "gold_evt": 77
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "collaboration with a contact",
+            "predicted_evt": 21,
+            "gold_evt": 23
+        },
+        {
+            "prediction": "This gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 0,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "correspondence for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 39,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 14,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "hanging in a conflict",
+            "gold": "hanging in a conflict",
+            "predicted_evt": 8,
+            "gold_evt": 8
+        },
+        {
+            "prediction": "the broadact of a threat or coercion",
+            "gold": "the broadact of a threat or coercion",
+            "predicted_evt": 52,
+            "gold_evt": 52
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "the broadcast of a public statement in person",
+            "predicted_evt": 11,
+            "gold_evt": 46
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 122,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "This broadcast about a command or order",
+            "gold": "correspondence for a negotiation",
+            "predicted_evt": 0,
+            "gold_evt": 39
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the start of a position",
+            "predicted_evt": 123,
+            "gold_evt": 124
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a person in self motion",
+            "gold": "a person in self motion",
+            "predicted_evt": 116,
+            "gold_evt": 116
+        },
+        {
+            "prediction": "meeting for a funeral or vigil",
+            "gold": "death caused by violent events",
+            "predicted_evt": 35,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "government agreements",
+            "predicted_evt": 59,
+            "gold_evt": 59
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "the end of a position",
+            "predicted_evt": 56,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 56,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "the end of a position",
+            "predicted_evt": 51,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "death",
+            "predicted_evt": 70,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 1,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a transfer of money",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 132,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "hanging in a conflict",
+            "gold": "hanging in a conflict",
+            "predicted_evt": 8,
+            "gold_evt": 8
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 115,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 137,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 40,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 90,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "an injury",
+            "predicted_evt": 84,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the transportation of a person",
+            "predicted_evt": 109,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "correspondence about a threat or coercion",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 53,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "an injury",
+            "predicted_evt": 115,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "collaboration with a contact",
+            "predicted_evt": 78,
+            "gold_evt": 23
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "payment for a service",
+            "predicted_evt": 133,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "air strike or missile strike in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 4,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 48,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "correspondence for a discussion",
+            "gold": "a public statement in person",
+            "predicted_evt": 32,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "the end of a position",
+            "predicted_evt": 120,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "a broadcast about a command or order",
+            "predicted_evt": 89,
+            "gold_evt": 24
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "an injury",
+            "gold": "attack in a conflict",
+            "predicted_evt": 90,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "air strike or missile strike in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 4
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "artifact destruction",
+            "predicted_evt": 73,
+            "gold_evt": 2
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 51,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "artifact destruction",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 2,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 123,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "election of a person",
+            "predicted_evt": 137,
+            "gold_evt": 118
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "a public statement in person",
+            "predicted_evt": 24,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "payment for a service",
+            "predicted_evt": 137,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "death",
+            "predicted_evt": 11,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 13,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 72,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 106,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "march or protest or political gathering in a conflict",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 16,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "an injury caused hunger or thirst",
+            "gold": "an injury caused hunger or thirst",
+            "predicted_evt": 87,
+            "gold_evt": 87
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "the broadcast of a request or advise",
+            "predicted_evt": 110,
+            "gold_evt": 48
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 137,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 55,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "an injury",
+            "predicted_evt": 14,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "spionage",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 66,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "a media statement",
+            "predicted_evt": 109,
+            "gold_evt": 38
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 109,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 25,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "an entry grant for the transportation of an artifact",
+            "predicted_evt": 11,
+            "gold_evt": 98
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "payment for a service",
+            "predicted_evt": 133,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 24,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 115,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "spionage",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 66,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 51,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death caused by violent events",
+            "predicted_evt": 86,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "This injury caused hunger or thirst",
+            "gold": "an injury caused hunger or thirst",
+            "predicted_evt": 0,
+            "gold_evt": 87
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "the broadact of a threat or coercion",
+            "predicted_evt": 55,
+            "gold_evt": 52
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "the broadcast of a media statement",
+            "predicted_evt": 38,
+            "gold_evt": 37
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "judicial consequences",
+            "predicted_evt": 84,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 24,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a meeting about a command or order",
+            "predicted_evt": 51,
+            "gold_evt": 26
+        },
+        {
+            "prediction": "invasion in a conflict",
+            "gold": "a government merge",
+            "predicted_evt": 9,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "surrender in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 20
+        },
+        {
+            "prediction": "yielding in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 18,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "death caused by violent events",
+            "predicted_evt": 49,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "the building of an artifact",
+            "predicted_evt": 14,
+            "gold_evt": 91
+        },
+        {
+            "prediction": "This broadcast is about command or order",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 0,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 48,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "the building of an artifact",
+            "predicted_evt": 92,
+            "gold_evt": 91
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "a meeting about a command or order",
+            "predicted_evt": 24,
+            "gold_evt": 26
+        },
+        {
+            "prediction": "charge indiction in a judicial process",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 75,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "spionage",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 66,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "the transportation of an artifact",
+            "gold": "the transportation of a person",
+            "predicted_evt": 100,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "march or protest or political gathering in a conflict",
+            "predicted_evt": 84,
+            "gold_evt": 16
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 137,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "smuggling or extracting a person",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 117,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 58,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "money borrowed or lent",
+            "gold": "ownership borrowed or lent",
+            "predicted_evt": 129,
+            "gold_evt": 135
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 80,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 49,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "firearm attack in a conflict",
+            "gold": "a crime investigation",
+            "predicted_evt": 7,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "discussion with a contact",
+            "predicted_evt": 11,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 90,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "This broadcast about a command or order",
+            "gold": "correspondence about a command or order",
+            "predicted_evt": 0,
+            "gold_evt": 25
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "the rejection of an agreement or cease fire",
+            "predicted_evt": 11,
+            "gold_evt": 60
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "correspondence about a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 53,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 45
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 58,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "artifact destruction",
+            "gold": "artifact destruction",
+            "predicted_evt": 2,
+            "gold_evt": 2
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "money borrowed or lent",
+            "gold": "a negotiation",
+            "predicted_evt": 129,
+            "gold_evt": 41
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "judicial consequences",
+            "predicted_evt": 84,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "an inspection of people",
+            "predicted_evt": 72,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "legislation",
+            "gold": "a public statement in person",
+            "predicted_evt": 65,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "the broadcast of a public statement in person",
+            "gold": "a government merge",
+            "predicted_evt": 46,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "an artifact dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 96
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 21,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "retreat in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 19
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "an artifact dispersed or separated during transportation",
+            "predicted_evt": 95,
+            "gold_evt": 96
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 106,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 11,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "This gift granted or aid provided in a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 0,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "correspondence for a discussion",
+            "gold": "correspondence for a negotiation",
+            "predicted_evt": 32,
+            "gold_evt": 39
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 137,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "a purchase with a transfer of money",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 134,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 51,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 11,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "bombing in a conflict",
+            "predicted_evt": 92,
+            "gold_evt": 6
+        },
+        {
+            "prediction": "retreat in a conflict",
+            "gold": "yielding in a conflict",
+            "predicted_evt": 19,
+            "gold_evt": 18
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "meeting for commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 30
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 120,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "an election won by a person",
+            "predicted_evt": 119,
+            "gold_evt": 119
+        },
+        {
+            "prediction": "an injury caused by physical degradation",
+            "gold": "an injury",
+            "predicted_evt": 88,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "meeting for commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 30
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "death",
+            "predicted_evt": 14,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "the broadact of a threat or coercion",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 52,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "an artifact fallen during transportation",
+            "predicted_evt": 30,
+            "gold_evt": 97
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "biological or chemical or poison attack in a conflict",
+            "predicted_evt": 110,
+            "gold_evt": 5
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 123,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "a person hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 112
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "an injury caused by physical degradation",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 88,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 122,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "This broadcast about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 0,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "This investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 0,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "a fire explosion",
+            "gold": "a fire explosion",
+            "predicted_evt": 57,
+            "gold_evt": 57
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 11,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an injury",
+            "gold": "bombing in a conflict",
+            "predicted_evt": 90,
+            "gold_evt": 6
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "judicial consequences",
+            "predicted_evt": 0,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "judicial consequences",
+            "predicted_evt": 0,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the rejection of an agreement or cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 60
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 123,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "correspondence about a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 53,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "firearm attack in a conflict",
+            "gold": "an injury",
+            "predicted_evt": 7,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 123,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 103,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "discussion with a contact",
+            "predicted_evt": 40,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "This threat or coercion",
+            "gold": "threat or coercion in a meeting",
+            "predicted_evt": 0,
+            "gold_evt": 54
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death",
+            "predicted_evt": 86,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 56,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "a public statement in person",
+            "gold": "a public statement in person",
+            "predicted_evt": 47,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "payment for a service",
+            "predicted_evt": 133,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 51,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "steal or rob or hijack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 14
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death",
+            "predicted_evt": 86,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "attack in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 10,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "a media statement",
+            "predicted_evt": 11,
+            "gold_evt": 38
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 89,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 120,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the start of a position",
+            "predicted_evt": 123,
+            "gold_evt": 124
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a request or advise",
+            "predicted_evt": 137,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transaction",
+            "predicted_evt": 136,
+            "gold_evt": 125
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "a government merge",
+            "predicted_evt": 63,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "a person who quit a position or retired",
+            "predicted_evt": 122,
+            "gold_evt": 122
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "election of a person",
+            "predicted_evt": 119,
+            "gold_evt": 118
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury",
+            "predicted_evt": 90,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a person hidden during transportation",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 112,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 58,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 74,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "a government merge",
+            "predicted_evt": 63,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "spionage",
+            "gold": "biological or chemical or poison attack in a conflict",
+            "predicted_evt": 66,
+            "gold_evt": 5
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 137,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "This gift granted or aid provided in a transfer of ownership",
+            "gold": "a transaction",
+            "predicted_evt": 0,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a sensory inspection",
+            "predicted_evt": 72,
+            "gold_evt": 72
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "the broadcast of a media statement",
+            "predicted_evt": 40,
+            "gold_evt": 37
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 11,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "a government merge",
+            "gold": "ownership borrowed or lent",
+            "predicted_evt": 62,
+            "gold_evt": 135
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 106,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "the broadcast of a request or advise",
+            "predicted_evt": 38,
+            "gold_evt": 48
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "legislation",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 65,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "a negotiation",
+            "gold": "the transportation of a person",
+            "predicted_evt": 41,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "an artifact dispersed or separated during transportation",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 96,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 74,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "an artifact dispersed or separated during transportation",
+            "predicted_evt": 95,
+            "gold_evt": 96
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "payment for a service",
+            "predicted_evt": 40,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 89,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a person in self motion",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 116,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "a person dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 108
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 74,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "charge indiction in a judicial process",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 75,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "spionage",
+            "gold": "artifact damage",
+            "predicted_evt": 66,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "a trial hearing in a judicial process",
+            "gold": "a trial hearing in a judicial process",
+            "predicted_evt": 77,
+            "gold_evt": 77
+        },
+        {
+            "prediction": "retreat in a conflict",
+            "gold": "yielding in a conflict",
+            "predicted_evt": 19,
+            "gold_evt": 18
+        },
+        {
+            "prediction": "a transfer of money",
+            "gold": "a transfer of money",
+            "predicted_evt": 132,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 136,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "hanging in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 8,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "spionage",
+            "gold": "an inspection of people",
+            "predicted_evt": 66,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "the building of an artifact",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 91,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "stabbing in a conflict",
+            "predicted_evt": 13,
+            "gold_evt": 13
+        },
+        {
+            "prediction": "This investigation",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 0,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "the broadcast of a media statement",
+            "gold": "the broadcast of a media statement",
+            "predicted_evt": 37,
+            "gold_evt": 37
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 139,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 31
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a government formation",
+            "predicted_evt": 123,
+            "gold_evt": 63
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "a government vote",
+            "predicted_evt": 119,
+            "gold_evt": 68
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 80,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "This broadcast about a command or order",
+            "gold": "correspondence about a command or order",
+            "predicted_evt": 0,
+            "gold_evt": 25
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 120,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "the broadcast of a media statement",
+            "predicted_evt": 38,
+            "gold_evt": 37
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a grant of entry or asylum to a person",
+            "gold": "an inspection of people",
+            "predicted_evt": 111,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "a transaction",
+            "predicted_evt": 136,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "artifact damage",
+            "predicted_evt": 1,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "spionage",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 66,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "correspondence about commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 29
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "judicial consequences",
+            "predicted_evt": 80,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "the broadcast of a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 48
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "artifact damage",
+            "predicted_evt": 137,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 14,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "discussion with a contact",
+            "predicted_evt": 25,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "This broadcast is about a command or order",
+            "gold": "the broadcast of a public statement in person",
+            "predicted_evt": 0,
+            "gold_evt": 46
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 48,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 122,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a sensory inspection",
+            "predicted_evt": 73,
+            "gold_evt": 72
+        },
+        {
+            "prediction": "biological or chemical or poison attack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 5,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "the broadact of a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 52,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "carrying or unloading an artifact",
+            "predicted_evt": 110,
+            "gold_evt": 95
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transaction",
+            "predicted_evt": 136,
+            "gold_evt": 125
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "death",
+            "predicted_evt": 11,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 74,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "payment for a service",
+            "predicted_evt": 138,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "payment for a service",
+            "predicted_evt": 137,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 115,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "a meeting about a command or order",
+            "predicted_evt": 24,
+            "gold_evt": 26
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "commitment or promise or intent expression",
+            "predicted_evt": 30,
+            "gold_evt": 31
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "invasion in a conflict",
+            "gold": "legislation",
+            "predicted_evt": 9,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 110,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "a transfer of money",
+            "predicted_evt": 138,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "payment for a service",
+            "predicted_evt": 128,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "attack in a conflict",
+            "predicted_evt": 84,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the start of a position",
+            "predicted_evt": 123,
+            "gold_evt": 124
+        },
+        {
+            "prediction": "a person in self motion",
+            "gold": "a person in self motion",
+            "predicted_evt": 116,
+            "gold_evt": 116
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "the violation of an agreement",
+            "predicted_evt": 58,
+            "gold_evt": 61
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 14,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "the end of a position",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 121,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 11,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "death caused by violent events",
+            "predicted_evt": 0,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "an election won by a person",
+            "predicted_evt": 40,
+            "gold_evt": 119
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "a transfer of money",
+            "predicted_evt": 122,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "artifact damage",
+            "predicted_evt": 1,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "carrying or unloading a person",
+            "predicted_evt": 95,
+            "gold_evt": 107
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "extradition as a judicial consequence",
+            "predicted_evt": 82,
+            "gold_evt": 82
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 40,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "death caused by violent events",
+            "predicted_evt": 28,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "threat or coercion in a meeting",
+            "predicted_evt": 55,
+            "gold_evt": 54
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 137,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "invasion in a conflict",
+            "gold": "invasion in a conflict",
+            "predicted_evt": 9,
+            "gold_evt": 9
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 137,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "a transfer of money",
+            "predicted_evt": 135,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "This gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of money",
+            "predicted_evt": 0,
+            "gold_evt": 131
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 70,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "death",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 85,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a purchase with a transfer of money",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 134,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 89,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "the broadact of a threat or coercion",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 52,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "meeting for a funeral or vigil",
+            "gold": "air strike or missile strike in a conflict",
+            "predicted_evt": 35,
+            "gold_evt": 4
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "an artifact received or imported",
+            "predicted_evt": 70,
+            "gold_evt": 104
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "government agreements",
+            "predicted_evt": 59,
+            "gold_evt": 59
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "an injury",
+            "predicted_evt": 33,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transaction",
+            "predicted_evt": 137,
+            "gold_evt": 126
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 138,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 92,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 21,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "a person hidden during transportation",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 112,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 11,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "retreat in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 19,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 51,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "the broadcast of a public statement in person",
+            "predicted_evt": 70,
+            "gold_evt": 46
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 58,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "discussion with a contact",
+            "predicted_evt": 136,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "a government vote",
+            "predicted_evt": 119,
+            "gold_evt": 68
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "artifact destruction",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 2,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "the transportation of a person",
+            "predicted_evt": 92,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "meeting for commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 30
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of money",
+            "predicted_evt": 137,
+            "gold_evt": 131
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "discussion with a contact",
+            "predicted_evt": 137,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 40,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "the transportation of a person",
+            "predicted_evt": 128,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a person hidden during transportation",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 112,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a transaction",
+            "predicted_evt": 137,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "death",
+            "gold": "death caused by violent events",
+            "predicted_evt": 85,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "death caused by violent events",
+            "predicted_evt": 0,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "steal or rob or hijack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 14
+        },
+        {
+            "prediction": "This threat or coercion",
+            "gold": "a threat or coercion",
+            "predicted_evt": 0,
+            "gold_evt": 55
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transaction",
+            "predicted_evt": 136,
+            "gold_evt": 125
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a public statement in person",
+            "predicted_evt": 42,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "an inspection of people",
+            "predicted_evt": 73,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a government government vote",
+            "gold": "an artifact fallen during transportation",
+            "predicted_evt": 0,
+            "gold_evt": 97
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "a transaction",
+            "predicted_evt": 14,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "a grant of entry or asylum to a person",
+            "predicted_evt": 119,
+            "gold_evt": 111
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "the transportation of a person",
+            "gold": "the transportation of a person",
+            "predicted_evt": 113,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "a government formation",
+            "predicted_evt": 63,
+            "gold_evt": 63
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 33,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 49,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury",
+            "predicted_evt": 89,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a transfer of money",
+            "predicted_evt": 137,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 123,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "steal or rob or hijack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 14
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "carrying or unloading an artifact",
+            "predicted_evt": 95,
+            "gold_evt": 95
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "air strike or missile strike in a conflict",
+            "predicted_evt": 59,
+            "gold_evt": 4
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "discussion with a contact",
+            "predicted_evt": 21,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "an injury",
+            "predicted_evt": 51,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of money",
+            "predicted_evt": 137,
+            "gold_evt": 131
+        },
+        {
+            "prediction": "judicial consequence",
+            "gold": "death caused by violent events",
+            "predicted_evt": 0,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "a transfer of money",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 132,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "an artifact hidden during transportation",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 99,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "This person who was fired or laid off",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 0,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "prevarication",
+            "gold": "correspondence about a prevarication",
+            "predicted_evt": 45,
+            "gold_evt": 43
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "death caused by violent events",
+            "predicted_evt": 0,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury caused hunger or thirst",
+            "predicted_evt": 90,
+            "gold_evt": 87
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 40,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "the building of an artifact",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 91,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "an inspection of people",
+            "predicted_evt": 72,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "the transportation of a person",
+            "predicted_evt": 80,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 138,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 45
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a sensory inspection",
+            "predicted_evt": 72,
+            "gold_evt": 72
+        },
+        {
+            "prediction": "death",
+            "gold": "death",
+            "predicted_evt": 85,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "the transportation of a person",
+            "predicted_evt": 95,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "a public statement in person",
+            "predicted_evt": 24,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "a government start",
+            "predicted_evt": 92,
+            "gold_evt": 64
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 48,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 106,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "non violent death",
+            "predicted_evt": 86,
+            "gold_evt": 86
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "an injury",
+            "predicted_evt": 11,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "a person in self motion",
+            "predicted_evt": 21,
+            "gold_evt": 116
+        },
+        {
+            "prediction": "death",
+            "gold": "death caused by violent events",
+            "predicted_evt": 85,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "charge indiction in a judicial process",
+            "gold": "a judicial process",
+            "predicted_evt": 75,
+            "gold_evt": 76
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "a fire explosion",
+            "gold": "bombing in a conflict",
+            "predicted_evt": 57,
+            "gold_evt": 6
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "stabbing in a conflict",
+            "predicted_evt": 13,
+            "gold_evt": 13
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 55,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "correspondence about a negotiation",
+            "gold": "legislation",
+            "predicted_evt": 0,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 70,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 115,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a public statement in person",
+            "predicted_evt": 133,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "an artifact hidden during transportation",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 99,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 11,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 89,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "a person who quit a position or retired",
+            "predicted_evt": 56,
+            "gold_evt": 122
+        },
+        {
+            "prediction": "correspondence about a threat or coercion",
+            "gold": "the broadact of a threat or coercion",
+            "predicted_evt": 53,
+            "gold_evt": 52
+        },
+        {
+            "prediction": "This transfer of ownership",
+            "gold": "payment for a service",
+            "predicted_evt": 0,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "an injury caused hunger or thirst",
+            "gold": "an injury caused hunger or thirst",
+            "predicted_evt": 87,
+            "gold_evt": 87
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 48,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "a media statement",
+            "predicted_evt": 11,
+            "gold_evt": 38
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "carrying or unloading a person",
+            "predicted_evt": 95,
+            "gold_evt": 107
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 133,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "the broadcast of a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 48
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "the transportation of an artifact",
+            "gold": "a public statement in person",
+            "predicted_evt": 100,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "a judicial process",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 76,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "an embargo or sanction in a transaction",
+            "predicted_evt": 40,
+            "gold_evt": 125
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "correspondence about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 43
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 56,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 21,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury caused hunger or thirst",
+            "predicted_evt": 90,
+            "gold_evt": 87
+        },
+        {
+            "prediction": "hanging in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 8,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "judicial consequences",
+            "predicted_evt": 80,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 73,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "This broadcast about a command or order",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 0,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 33,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "charge indiction in a judicial process",
+            "gold": "correspondence about a command or order",
+            "predicted_evt": 75,
+            "gold_evt": 25
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 21,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "extradition as a judicial consequence",
+            "predicted_evt": 82,
+            "gold_evt": 82
+        },
+        {
+            "prediction": "This threat or coercion",
+            "gold": "the broadact of a threat or coercion",
+            "predicted_evt": 0,
+            "gold_evt": 52
+        },
+        {
+            "prediction": "legislation",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 65,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 30,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "extradition as a judicial consequence",
+            "predicted_evt": 82,
+            "gold_evt": 82
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "attack in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 10,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 11,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "correspondence about a command or order",
+            "predicted_evt": 24,
+            "gold_evt": 25
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 123,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "correspondence about a request or advise",
+            "predicted_evt": 51,
+            "gold_evt": 49
+        },
+        {
+            "prediction": "legislation",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 65,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 138,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "a government merge",
+            "predicted_evt": 63,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transaction",
+            "predicted_evt": 137,
+            "gold_evt": 126
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "an artifact dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 96
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "government agreements",
+            "predicted_evt": 58,
+            "gold_evt": 59
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a grant of entry or asylum to a person",
+            "predicted_evt": 128,
+            "gold_evt": 111
+        },
+        {
+            "prediction": "retreat in a conflict",
+            "gold": "retreat in a conflict",
+            "predicted_evt": 19,
+            "gold_evt": 19
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "death caused by violent events",
+            "predicted_evt": 13,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the evacuation or rescue of a person",
+            "predicted_evt": 109,
+            "gold_evt": 109
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "an artifact received or imported",
+            "predicted_evt": 70,
+            "gold_evt": 104
+        },
+        {
+            "prediction": "death",
+            "gold": "artifact destruction",
+            "predicted_evt": 85,
+            "gold_evt": 2
+        },
+        {
+            "prediction": "artifact destruction",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 2,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of ownership",
+            "predicted_evt": 137,
+            "gold_evt": 137
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "discussion with a contact",
+            "predicted_evt": 33,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 74,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "carrying or unloading an artifact",
+            "predicted_evt": 95,
+            "gold_evt": 95
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "carrying or unloading an artifact",
+            "predicted_evt": 97,
+            "gold_evt": 95
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 115,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 120,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "death",
+            "gold": "death",
+            "predicted_evt": 85,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 40,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 78,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a sensory inspection",
+            "predicted_evt": 73,
+            "gold_evt": 72
+        },
+        {
+            "prediction": "an exit prevention for the transportation of a person",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 115,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "judicial consequence",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "the end of a position",
+            "predicted_evt": 122,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "an injury",
+            "predicted_evt": 49,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "demonstration in a conflict",
+            "gold": "march or protest or political gathering in a conflict",
+            "predicted_evt": 17,
+            "gold_evt": 16
+        },
+        {
+            "prediction": "the building of an artifact",
+            "gold": "the building of an artifact",
+            "predicted_evt": 91,
+            "gold_evt": 91
+        },
+        {
+            "prediction": "biological or chemical or poison attack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 5,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the transportation of a person",
+            "predicted_evt": 109,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "legislation",
+            "gold": "an inspection of people",
+            "predicted_evt": 65,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "attack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 10,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 11,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "discussion with a contact",
+            "predicted_evt": 33,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "artifact damage or destruction",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 3,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "a government formation",
+            "predicted_evt": 63,
+            "gold_evt": 63
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "discussion with a contact",
+            "predicted_evt": 33,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "government agreements",
+            "predicted_evt": 59,
+            "gold_evt": 59
+        },
+        {
+            "prediction": "This request or advise",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 0,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "a media statement",
+            "predicted_evt": 38,
+            "gold_evt": 38
+        },
+        {
+            "prediction": "an injury",
+            "gold": "a person who quit a position or retired",
+            "predicted_evt": 90,
+            "gold_evt": 122
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the evacuation or rescue of a person",
+            "predicted_evt": 109,
+            "gold_evt": 109
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "the transportation of a person",
+            "predicted_evt": 56,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "an injury",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 90,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "a person dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 108
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 138,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "attack in a conflict",
+            "predicted_evt": 59,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "spionage",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 66,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "air strike or missile strike in a conflict",
+            "gold": "the transportation of a person",
+            "predicted_evt": 4,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 137,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 73,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "This person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 0,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "a judicial process",
+            "gold": "a trial hearing in a judicial process",
+            "predicted_evt": 76,
+            "gold_evt": 77
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "march or protest or political gathering in a conflict",
+            "predicted_evt": 24,
+            "gold_evt": 16
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 14,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "firearm attack in a conflict",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 7,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a judicial process",
+            "gold": "a trial hearing in a judicial process",
+            "predicted_evt": 76,
+            "gold_evt": 77
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 14,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "a transfer of money",
+            "predicted_evt": 106,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 73,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 106,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 119,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 56,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "a government",
+            "gold": "attack in a conflict",
+            "predicted_evt": 0,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "a request or advise",
+            "predicted_evt": 49,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "extradition as a judicial consequence",
+            "predicted_evt": 82,
+            "gold_evt": 82
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 78,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 137,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 33,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 95,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "a person hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 112
+        },
+        {
+            "prediction": "death",
+            "gold": "death caused by violent events",
+            "predicted_evt": 85,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "This crime investigation",
+            "gold": "a trial hearing in a judicial process",
+            "predicted_evt": 0,
+            "gold_evt": 77
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 137,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "a grant of entry or asylum to a person",
+            "predicted_evt": 82,
+            "gold_evt": 111
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "discussion with a contact",
+            "predicted_evt": 33,
+            "gold_evt": 34
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "attack in a conflict",
+            "predicted_evt": 38,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "spionage",
+            "gold": "a transaction",
+            "predicted_evt": 66,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "artifact damage or destruction",
+            "predicted_evt": 58,
+            "gold_evt": 3
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "judicial consequences",
+            "predicted_evt": 80,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "a broadcast",
+            "gold": "correspondence about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 43
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "attack in a conflict",
+            "predicted_evt": 33,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 48,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "artifact damage",
+            "predicted_evt": 25,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "a gift granted or aid provided in a transfer of money",
+            "predicted_evt": 1,
+            "gold_evt": 131
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 40,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "the building of an artifact",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 91,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 78,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of a person",
+            "predicted_evt": 106,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 78,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "arrest or jail or detention",
+            "predicted_evt": 103,
+            "gold_evt": 74
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "a person who quit a position or retired",
+            "predicted_evt": 13,
+            "gold_evt": 122
+        },
+        {
+            "prediction": "This threat or coercion",
+            "gold": "the broadact of a threat or coercion",
+            "predicted_evt": 0,
+            "gold_evt": 52
+        },
+        {
+            "prediction": "a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 51,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "an injury caused by physical degradation",
+            "gold": "an injury caused by physical degradation",
+            "predicted_evt": 88,
+            "gold_evt": 88
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 138,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "a fire explosion",
+            "gold": "bombing in a conflict",
+            "predicted_evt": 57,
+            "gold_evt": 6
+        },
+        {
+            "prediction": "violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 0,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "correspondence for a negotiation",
+            "predicted_evt": 49,
+            "gold_evt": 39
+        },
+        {
+            "prediction": "correspondence about a threat or coercion",
+            "gold": "correspondence about a threat or coercion",
+            "predicted_evt": 53,
+            "gold_evt": 53
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "a person dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 108
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "artifact damage",
+            "predicted_evt": 1,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "artifact damage",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 1,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of a person",
+            "predicted_evt": 106,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "a person fallen during transportation",
+            "gold": "attack in a conflict",
+            "predicted_evt": 110,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an investigation",
+            "predicted_evt": 56,
+            "gold_evt": 79
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "demonstration in a conflict",
+            "predicted_evt": 24,
+            "gold_evt": 17
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "a public statement in person",
+            "predicted_evt": 59,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "a request or advise",
+            "predicted_evt": 25,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "an artifact fallen during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 97
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "meeting in a collaboration",
+            "predicted_evt": 33,
+            "gold_evt": 22
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "commitment or promise or intent expression",
+            "predicted_evt": 30,
+            "gold_evt": 31
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an artifact hidden during transportation",
+            "predicted_evt": 106,
+            "gold_evt": 99
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 103,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "meeting for a funeral or vigil",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 35,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 33,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "an entry grant for the transportation of an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 98
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "the end of a position",
+            "predicted_evt": 56,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death",
+            "predicted_evt": 86,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an injury",
+            "predicted_evt": 56,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the evacuation or rescue of a person",
+            "predicted_evt": 109,
+            "gold_evt": 109
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "meeting for commitment or promise or intent expression",
+            "predicted_evt": 30,
+            "gold_evt": 30
+        },
+        {
+            "prediction": "correspondence about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 29,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "This crime investigation",
+            "gold": "a judicial process",
+            "predicted_evt": 0,
+            "gold_evt": 76
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 45
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "execution as a judicial consequence",
+            "predicted_evt": 0,
+            "gold_evt": 81
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "correspondence about commitment or promise or intent expression",
+            "predicted_evt": 122,
+            "gold_evt": 29
+        },
+        {
+            "prediction": "a artifact fallen during transportation",
+            "gold": "correspondence in a collaboration",
+            "predicted_evt": 0,
+            "gold_evt": 21
+        },
+        {
+            "prediction": "an entry prevention for the transportation of a person",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 114,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 49,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death",
+            "predicted_evt": 86,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transaction",
+            "predicted_evt": 136,
+            "gold_evt": 125
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "an artifact fallen during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 97
+        },
+        {
+            "prediction": "a person dispersed or separated during transportation",
+            "gold": "the transportation of a person",
+            "predicted_evt": 108,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "a government formation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 63,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "a government merge",
+            "predicted_evt": 11,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 103,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "correspondence for a negotiation",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 39,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "the broadcast of a request or advise",
+            "gold": "a request or advise in a meeting",
+            "predicted_evt": 48,
+            "gold_evt": 50
+        },
+        {
+            "prediction": "judicial consequence",
+            "gold": "a meeting about a command or order",
+            "predicted_evt": 0,
+            "gold_evt": 26
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 58,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "an embargo or sanction in a transaction",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 125,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 78,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "a transfer of money",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 132,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "smuggling or extracting an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 106
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "the evacuation or rescue of a person",
+            "predicted_evt": 109,
+            "gold_evt": 109
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transfer of money",
+            "predicted_evt": 137,
+            "gold_evt": 131
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the start of a position",
+            "predicted_evt": 123,
+            "gold_evt": 124
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "a broadcast about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 42
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 80,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "spionage",
+            "gold": "a person hidden during transportation",
+            "predicted_evt": 66,
+            "gold_evt": 112
+        },
+        {
+            "prediction": "air strike or missile strike in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 4,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "ownership borrowed or lent",
+            "predicted_evt": 138,
+            "gold_evt": 135
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "the broadcast of a public statement in person",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 46,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "meeting for a discussion",
+            "gold": "collaboration with a contact",
+            "predicted_evt": 33,
+            "gold_evt": 23
+        },
+        {
+            "prediction": "This broadcast about a prevarication",
+            "gold": "correspondence about a prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 43
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "charge indiction in a judicial process",
+            "gold": "charge indiction in a judicial process",
+            "predicted_evt": 75,
+            "gold_evt": 75
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury",
+            "predicted_evt": 89,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "a transfer of ownership",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 138,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "a broadcast about a command or order",
+            "gold": "march or protest or political gathering in a conflict",
+            "predicted_evt": 24,
+            "gold_evt": 16
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "steal or rob or hijack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 14
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 40,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "the transportation of a person",
+            "gold": "a person fallen during transportation",
+            "predicted_evt": 113,
+            "gold_evt": 110
+        },
+        {
+            "prediction": "extradition as a judicial consequence",
+            "gold": "extradition as a judicial consequence",
+            "predicted_evt": 82,
+            "gold_evt": 82
+        },
+        {
+            "prediction": "a physical investigation or inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 73,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "carrying or unloading an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 95,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "the evacuation or rescue of a person",
+            "gold": "death caused by violent events",
+            "predicted_evt": 109,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a person dispersed or separated during transportation",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 108,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "surrender in a conflict",
+            "gold": "the broadcast of a public statement in person",
+            "predicted_evt": 20,
+            "gold_evt": 46
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 70,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "a purchase",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 0,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a transfer of money",
+            "gold": "correspondence for a negotiation",
+            "predicted_evt": 132,
+            "gold_evt": 39
+        },
+        {
+            "prediction": "demonstration in a conflict",
+            "gold": "demonstration in a conflict",
+            "predicted_evt": 17,
+            "gold_evt": 17
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of money",
+            "predicted_evt": 139,
+            "gold_evt": 134
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "a broadcast about commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 28
+        },
+        {
+            "prediction": "arrest or jail or detention",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 74,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "This person being hired",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 0,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "a request or advise",
+            "predicted_evt": 25,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "an accident or crash",
+            "predicted_evt": 56,
+            "gold_evt": 56
+        },
+        {
+            "prediction": "a purchase with a transfer of money",
+            "gold": "a transfer of money",
+            "predicted_evt": 134,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "This government formation",
+            "gold": "march or protest or political gathering in a conflict",
+            "predicted_evt": 0,
+            "gold_evt": 16
+        },
+        {
+            "prediction": "artifact destruction",
+            "gold": "artifact destruction",
+            "predicted_evt": 2,
+            "gold_evt": 2
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "an inspection of people",
+            "predicted_evt": 137,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "a funeral or vigil",
+            "gold": "a funeral or vigil",
+            "predicted_evt": 36,
+            "gold_evt": 36
+        },
+        {
+            "prediction": "an election won by a person",
+            "gold": "an election won by a person",
+            "predicted_evt": 119,
+            "gold_evt": 119
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "a person being hired",
+            "predicted_evt": 123,
+            "gold_evt": 123
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "a person who quit a position or retired",
+            "predicted_evt": 122,
+            "gold_evt": 122
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "attack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 10
+        },
+        {
+            "prediction": "correspondence about a request or advise",
+            "gold": "meeting for a discussion",
+            "predicted_evt": 49,
+            "gold_evt": 33
+        },
+        {
+            "prediction": "This broadcast about commitment or promise or intent expression",
+            "gold": "prevarication",
+            "predicted_evt": 0,
+            "gold_evt": 45
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a sensory inspection",
+            "predicted_evt": 72,
+            "gold_evt": 72
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "a broadcast about a command or order",
+            "predicted_evt": 25,
+            "gold_evt": 24
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "meeting for a funeral or vigil",
+            "predicted_evt": 72,
+            "gold_evt": 35
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transaction",
+            "predicted_evt": 137,
+            "gold_evt": 126
+        },
+        {
+            "prediction": "the transportation of an artifact",
+            "gold": "the evacuation or rescue of a person",
+            "predicted_evt": 100,
+            "gold_evt": 109
+        },
+        {
+            "prediction": "the creation of an intellectual property",
+            "gold": "the creation of a manufacture",
+            "predicted_evt": 92,
+            "gold_evt": 93
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a government merge",
+            "predicted_evt": 137,
+            "gold_evt": 62
+        },
+        {
+            "prediction": "spionage",
+            "gold": "spionage",
+            "predicted_evt": 66,
+            "gold_evt": 66
+        },
+        {
+            "prediction": "correspondence about a command or order",
+            "gold": "command or order",
+            "predicted_evt": 25,
+            "gold_evt": 27
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death",
+            "predicted_evt": 84,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "spionage",
+            "gold": "artifact damage",
+            "predicted_evt": 66,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 127
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "threat or coercion in a meeting",
+            "predicted_evt": 122,
+            "gold_evt": 54
+        },
+        {
+            "prediction": "a person who was fired or laid off",
+            "gold": "the transportation of a person",
+            "predicted_evt": 120,
+            "gold_evt": 113
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 97,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "meeting for commitment or promise or intent expression",
+            "gold": "commitment or promise or intent expression",
+            "predicted_evt": 30,
+            "gold_evt": 31
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 103,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "a request or advise in a meeting",
+            "gold": "correspondence about a command or order",
+            "predicted_evt": 50,
+            "gold_evt": 25
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a gift granted or aid provided in a transaction",
+            "predicted_evt": 137,
+            "gold_evt": 126
+        },
+        {
+            "prediction": "judicial process",
+            "gold": "biological or chemical or poison attack in a conflict",
+            "predicted_evt": 0,
+            "gold_evt": 5
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of an artifact",
+            "predicted_evt": 103,
+            "gold_evt": 103
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 137,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 122,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 70,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "an accident or crash",
+            "gold": "a person who was fired or laid off",
+            "predicted_evt": 56,
+            "gold_evt": 120
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "legislation",
+            "gold": "a government vote casted",
+            "predicted_evt": 65,
+            "gold_evt": 67
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "the manufacturing of an artifact",
+            "predicted_evt": 137,
+            "gold_evt": 94
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "steal or rob or hijack in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 14
+        },
+        {
+            "prediction": "a person being hired",
+            "gold": "the broadcast of a public statement in person",
+            "predicted_evt": 123,
+            "gold_evt": 46
+        },
+        {
+            "prediction": "the building of an artifact",
+            "gold": "the building of an artifact",
+            "predicted_evt": 91,
+            "gold_evt": 91
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "bombing in a conflict",
+            "gold": "bombing in a conflict",
+            "predicted_evt": 6,
+            "gold_evt": 6
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "smuggling or extracting a person",
+            "predicted_evt": 139,
+            "gold_evt": 117
+        },
+        {
+            "prediction": "a crime investigation",
+            "gold": "a crime investigation",
+            "predicted_evt": 78,
+            "gold_evt": 78
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 89,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "the acceptance of an agreement or a cease fire",
+            "predicted_evt": 59,
+            "gold_evt": 58
+        },
+        {
+            "prediction": "a person who quit a position or retired",
+            "gold": "the end of a position",
+            "predicted_evt": 122,
+            "gold_evt": 121
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of ownership",
+            "predicted_evt": 136,
+            "gold_evt": 136
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "payment for a service",
+            "predicted_evt": 133,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "an embargo or sanction in a transfer of ownership",
+            "gold": "an embargo or sanction in a transfer of money",
+            "predicted_evt": 136,
+            "gold_evt": 130
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "an inspection of people",
+            "predicted_evt": 72,
+            "gold_evt": 70
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "money borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 129
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "carrying or unloading a person",
+            "predicted_evt": 97,
+            "gold_evt": 107
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "steal or rob or hijack in a conflict",
+            "gold": "invasion in a conflict",
+            "predicted_evt": 14,
+            "gold_evt": 9
+        },
+        {
+            "prediction": "conviction as a judicial consequence",
+            "gold": "judicial consequences",
+            "predicted_evt": 80,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "the transportation of an artifact",
+            "predicted_evt": 106,
+            "gold_evt": 100
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "artifact damage",
+            "predicted_evt": 28,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "a public statement in person",
+            "gold": "a public statement in person",
+            "predicted_evt": 47,
+            "gold_evt": 47
+        },
+        {
+            "prediction": "correspondence in a collaboration",
+            "gold": "correspondence for a discussion",
+            "predicted_evt": 21,
+            "gold_evt": 32
+        },
+        {
+            "prediction": "a sensory inspection",
+            "gold": "a physical investigation or inspection",
+            "predicted_evt": 72,
+            "gold_evt": 73
+        },
+        {
+            "prediction": "an exit prevention for the transportation of an artifact",
+            "gold": "an exit prevention for the transportation of a person",
+            "predicted_evt": 103,
+            "gold_evt": 115
+        },
+        {
+            "prediction": "death caused by violent events",
+            "gold": "death caused by violent events",
+            "predicted_evt": 84,
+            "gold_evt": 84
+        },
+        {
+            "prediction": "an injury caused hunger or thirst",
+            "gold": "an injury",
+            "predicted_evt": 87,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "ownership borrowed or lent",
+            "gold": "ownership borrowed or lent",
+            "predicted_evt": 135,
+            "gold_evt": 135
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "self directed battle in a conflict",
+            "predicted_evt": 11,
+            "gold_evt": 11
+        },
+        {
+            "prediction": "a broadcast about a prevarication",
+            "gold": "a meeting about a prevarication",
+            "predicted_evt": 42,
+            "gold_evt": 44
+        },
+        {
+            "prediction": "the manufacturing of an artifact",
+            "gold": "an injury",
+            "predicted_evt": 94,
+            "gold_evt": 90
+        },
+        {
+            "prediction": "the acceptance of an agreement or a cease fire",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 58,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "a broadcast about commitment or promise or intent expression",
+            "gold": "meeting for commitment or promise or intent expression",
+            "predicted_evt": 28,
+            "gold_evt": 30
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a purchase with a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 139
+        },
+        {
+            "prediction": "an inspection of people",
+            "gold": "sending supply or exporting an artifact",
+            "predicted_evt": 70,
+            "gold_evt": 105
+        },
+        {
+            "prediction": "legislation",
+            "gold": "legislation",
+            "predicted_evt": 65,
+            "gold_evt": 65
+        },
+        {
+            "prediction": "This threat or coercion",
+            "gold": "a threat or coercion",
+            "predicted_evt": 0,
+            "gold_evt": 55
+        },
+        {
+            "prediction": "self directed battle in a conflict",
+            "gold": "an election won by a person",
+            "predicted_evt": 11,
+            "gold_evt": 119
+        },
+        {
+            "prediction": "government agreements",
+            "gold": "artifact destruction",
+            "predicted_evt": 59,
+            "gold_evt": 2
+        },
+        {
+            "prediction": "biological or chemical or poison attack in a conflict",
+            "gold": "biological or chemical or poison attack in a conflict",
+            "predicted_evt": 5,
+            "gold_evt": 5
+        },
+        {
+            "prediction": "stabbing in a conflict",
+            "gold": "stabbing in a conflict",
+            "predicted_evt": 13,
+            "gold_evt": 13
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "a threat or coercion",
+            "predicted_evt": 55,
+            "gold_evt": 55
+        },
+        {
+            "prediction": "a judicial process",
+            "gold": "a judicial process",
+            "predicted_evt": 76,
+            "gold_evt": 76
+        },
+        {
+            "prediction": "a media statement",
+            "gold": "a media statement",
+            "predicted_evt": 38,
+            "gold_evt": 38
+        },
+        {
+            "prediction": "non violent death",
+            "gold": "death",
+            "predicted_evt": 86,
+            "gold_evt": 85
+        },
+        {
+            "prediction": "a transfer of control in a transaction",
+            "gold": "a transfer of control in a transaction",
+            "predicted_evt": 128,
+            "gold_evt": 128
+        },
+        {
+            "prediction": "invasion in a conflict",
+            "gold": "artifact damage",
+            "predicted_evt": 9,
+            "gold_evt": 1
+        },
+        {
+            "prediction": "a gift granted or aid provided in a transfer of ownership",
+            "gold": "a request or advise",
+            "predicted_evt": 137,
+            "gold_evt": 51
+        },
+        {
+            "prediction": "an injury caused by violent events",
+            "gold": "an injury caused by violent events",
+            "predicted_evt": 89,
+            "gold_evt": 89
+        },
+        {
+            "prediction": "smuggling or extracting an artifact",
+            "gold": "judicial consequences",
+            "predicted_evt": 106,
+            "gold_evt": 83
+        },
+        {
+            "prediction": "an artifact fallen during transportation",
+            "gold": "an artifact dispersed or separated during transportation",
+            "predicted_evt": 97,
+            "gold_evt": 96
+        },
+        {
+            "prediction": "meeting for a negotiation",
+            "gold": "meeting for a negotiation",
+            "predicted_evt": 40,
+            "gold_evt": 40
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "payment for a service",
+            "predicted_evt": 133,
+            "gold_evt": 133
+        },
+        {
+            "prediction": "payment for a service",
+            "gold": "a transfer of money",
+            "predicted_evt": 133,
+            "gold_evt": 132
+        },
+        {
+            "prediction": "a purchase with a transfer of ownership",
+            "gold": "a transfer of ownership",
+            "predicted_evt": 139,
+            "gold_evt": 138
+        },
+        {
+            "prediction": "a threat or coercion",
+            "gold": "threat or coercion in a meeting",
+            "predicted_evt": 55,
+            "gold_evt": 54
+        }
+    ]
+}
