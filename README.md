@@ -7,9 +7,9 @@ Install with:
 	
 	
 ## Task 1: Semantic Shifts
-Download *fastText* [wiki-news-300d-1M.vec](https://fasttext.cc/docs/en/english-vectors.html) and [HistoFast300D.zip](https://github.com/dhfbk/Histo) from the *Histo* repository. 
+Download fastText [wiki-news-300d-1M.vec](https://fasttext.cc/docs/en/english-vectors.html) and [HistoFast300D.zip](https://github.com/dhfbk/Histo) from the Histo repository. 
 
-Convert the *Histo* embeddings in binary format. The ``save_word2vec_format`` function in ``irproject/semantic_shifts.py`` can be used for this purpose.
+Convert the Histo embeddings in binary format. The ``save_word2vec_format`` function in ``irproject/semantic_shifts.py`` can be used for this purpose.
 
 Download BERT's fine-tuned model [bert-semeval2020](https://drive.google.com/file/d/1LiUqP5cao3gsQMNBCceioQ6Q7vYxkPTo/view?usp=sharing) and tokenizer [bert-semeval2020-tokenizer](https://drive.google.com/file/d/1FRoNBH1G9ZDtesLwAl4nlifbqQtsQCE4/view?usp=sharing).
 
