@@ -67,7 +67,7 @@ Finally, we aligned the vectors with orthogonal Procrustes and computed the cosi
 
 \subsubsection{Nearest Neighbors Method (NN).} This approach leverages ideas taken from the second-order similarity techniques over static embeddings. We used the same word embeddings and selected the same words as described for OP.
 
-For each selected word we took the 15 nearest neighbors in the historical vector space; then we measured the cosine distance between the word and these neighbors in the historical vector space; after that, we measured the cosine distance between the word and the same neighbors, but in the contemporary vector space; finally we computed the mean squared error (MSE) between the distances measured in the historical vector space and the distances measured in the contemporary vector space. Then we did the same for the 15 nearest neighbors in the contemporary model. Finally, we took the mean between the two MSE. 
+For each selected word we took the 15 nearest neighbors in the historical vector space; then we measured the cosine distance between the word and these neighbors in the historical vector space; after that, we measured the cosine distance between the word and the same neighbors, but in the contemporary vector space; finally, we computed the mean squared error (MSE) between the distances measured in the historical vector space and the distances measured in the contemporary vector space. Then we did the same for the 15 nearest neighbors in the contemporary model. Finally, we took the mean between the two MSE. 
 
 We shrunk the vocabulary of the two models to their intersection to guarantee that each neighbor found in one vector space was also present in the other. 
 
