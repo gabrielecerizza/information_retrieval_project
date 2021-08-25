@@ -57,25 +57,25 @@ Download the ``aida_ontology_cleaned.csv`` file from [here](https://github.com/r
 The directory tree for this task should look like this:
 
     project/
-            checkpoints/
-                historical_events/
-                    argument/
-                        epoch=2-step=21986.ckpt
-                    event/
-                        epoch=9-step=36649.ckpt
-                    event_gen/
-                        epoch=1-step=14657.ckpt
-                    mtl/
-                        epoch=13-step=45415.ckpt
-            datasets/
-                historical_events/
-                    wiki_dataset.json
-                rams/
-                    raw/
-                        dev.jsonlines
-                        test.jsonlines
-                        train.jsonlines
-                aida_ontology_cleaned.csv
+        checkpoints/
+            historical_events/
+                argument/
+                    epoch=2-step=21986.ckpt
+                event/
+                    epoch=9-step=36649.ckpt
+                event_gen/
+                    epoch=1-step=14657.ckpt
+                mtl/
+                    epoch=13-step=45415.ckpt
+        datasets/
+            historical_events/
+                wiki_dataset.json
+            rams/
+                raw/
+                    dev.jsonlines
+                    test.jsonlines
+                    train.jsonlines
+            aida_ontology_cleaned.csv
 
 ### Notebooks
 
@@ -87,4 +87,4 @@ The ``event_extraction.ipynb`` notebook was used to train and evaluate our model
 
 ### Results
 
-The results for this task are stored as JSON files in the ``results/historical_events`` subdirectories.
+The results for this task are stored as JSON files in the ``results/historical_events`` subdirectories. In the ``wiki_dataset`` subdirectory we stored predictions on the training set of our Wikipedia data set. Some noteworthy examples of our models capabilities on the Wikipedia data set can be found in our slides ``latex/slides/slides.pdf``.
