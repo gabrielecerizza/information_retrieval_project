@@ -120,7 +120,6 @@
         \item \textbf{Only the 5000 most frequent words}
         \item \textbf{Orthogonal Procrustes alignment}
         \begin{itemize}
-            \item implementation based on SVD and matrix multiplication
             \item noisy projections 
         \end{itemize}
         \item \textbf{Cosine distance between word embeddings}
@@ -159,7 +158,6 @@
         \begin{itemize}
             \item shuffled sentences from \textbf{1810-1860} and \textbf{1960-2010}
         \end{itemize}
-        \item \textbf{Embeddings aggregation according to lemma and POS tags}
     \end{itemize}
 	\centering
     \includegraphics[scale=0.33]{img/JSD.PNG}
@@ -262,7 +260,7 @@
         \item \textbf{Linked entities are not enough for classification}
         \begin{itemize}
             \item only the first mention is linked
-            \item surface form of an entity can vary greatly
+            \item surface form of an entity can vary greatly (“up the toe of Italy” for “Italian campaign (World War II)”)
         \end{itemize} 
         
     \end{itemize}
@@ -355,17 +353,17 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Wikipedia Test Example}
+
+\begin{frame}[standout]
+    Thank You
+\end{frame}
+
+\begin{frame}[noframenumbering]{Wikipedia Test Example}
     "After the Treaty of Versailles, treaties with Austria, Hungary, Bulgaria, and the Ottoman Empire were signed. However, \underline{the negotiation of the treaty with the Ottoman Empire} was followed by strife, and a final peace treaty between the \underline{Allied Powers} and the country that would shortly become the Republic of Turkey was not signed until 24 July 1923, \underline{at Lausanne} ."
     \begin{itemize}
         \item Predicted event: “government.agreements.unspecified"
         \item Predicted arguments: “Allied Powers and Ottoman Empire signed an agreement in Lausanne place"
     \end{itemize}
-\end{frame}
-
-
-\begin{frame}[standout]
-    Thank You
 \end{frame}
 
 \begin{frame}[noframenumbering]{Wikipedia Test Example}

@@ -155,14 +155,14 @@ The Histo Corpus is composed of news and travel narratives from 1865-1926 and is
 \begin{enumerate}
     \item The corpus is “historical" in the sense that the documents are not contemporary, but the annotated events are not “historical" in the sense that they are not characterized by historical figures or by episodes that we may find in a history textbook. 
     \item Since the corpus is annotated with “common" events described using a “historical" language, we would have no way to recognize “historical" events described using a “contemporary" language in Wikipedia.
-    \item The annotations are limited to the events themselves and do not include event arguments, like dates and people involved in the event.
+    \item The annotations are limited to the events themselves and do not include arguments, like dates and people involved in the events.
 \end{enumerate}
 
 To the best of our knowledge, there are no public English data sets in which historical events are annotated along with their arguments. A promising data set, described in~\cite{lai-etal-2021-event}, is yet to be published as of the time of this writing.
 
 For the recognition of events and their arguments, we employed the RAMS data set~\cite{ebner-etal-2020-rams}, in which 139 event types, each with up to 5 arguments, were annotated. Each document contains 5 sentences. The arguments of an event may be found in different sentences from the one in which the event is mentioned.
 
-We also built a data set composed of 1024 pages taken from Wikipedia, for a total of 4M tokens. Each page was classified as historical or not based on the properties of the corresponding Wikidata entry. Each page was split into paragraphs to which we assigned the same class of the page. Finally, each paragraph was annotated in the BIO format with the Wikipedia entities mentioned therein, by exploiting the links in the text. Those entities were likewise classified as historical or not based on their Wikidata entries.
+We also built a data set composed of 1024 pages taken from Wikipedia, for a total of 4M tokens. Each page was classified as historical or not based on the properties of the corresponding Wikidata entry. Each page was split into paragraphs to which we assigned the same class of the page. By exploiting the links in the text and Wikidata, we likewise classified the entities mentioned in each paragraph as historical or not. Finally, each paragraph was annotated in the BIO format with the Wikipedia entities mentioned therein.
 
 \subsection{Strategy}
 
