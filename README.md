@@ -87,4 +87,4 @@ The ``event_extraction.ipynb`` notebook was used to train and evaluate our model
 
 ### Results
 
-The results for this task are stored as JSON files in the ``results/historical_events`` subdirectories. In the ``wiki_dataset`` subdirectory we stored predictions on the training set of our Wikipedia data set. Some noteworthy examples of our models capabilities on the Wikipedia data set can be found in our slides (``latex/slides/slides.pdf``).
+The results for this task are stored as JSON files in the ``results/historical_events`` subdirectories. In the ``wiki_dataset`` subdirectory we stored predictions on our Wikipedia data set. Some noteworthy examples of our models capabilities on the Wikipedia data set can be found in our slides (``latex/slides/slides.pdf``).
